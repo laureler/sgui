@@ -51,7 +51,7 @@
 							<router-link to="basemodule/input" tag="li"><a>图片缩略图</a></router-link> 
 							<router-link to="basemodule/input" tag="li"><a>echart</a></router-link> 
 							<router-link to="basemodule/input" tag="li"><a>表格</a></router-link> 
-							<router-link to="basemodule/input" tag="li"><a>树控件</a></router-link> 
+							<router-link to="basemodule/tree" tag="li"><a>树控件</a></router-link>  
 						</ul>
 						<p class="list-title">基础组件 - 其他</p>
 						<ul class="list-menu">
