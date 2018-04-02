@@ -6,20 +6,32 @@
 		</div>
 		<div class="wrap">
 			 <div>
-				
+				 <p>传入{{new Date()}}</p>
+				 <p>返回{{time}}</p>
 			 </div>
 			 <div>
-                 示例代码
+				<p>示例代码</p>	
+				<p>参数类型 now {date}</p>
+				<p>symbol {string}  分隔符</p>		
+				<p>uiScript.formatDate(now,symbol)</p>
+				<p>uiScript.formatDate(new Date(),'-')</p>
              </div>
 			 
-			 <div>说明</div>
+			 <div></div>
 		</div>
 	</div>
 </template>
 
 <script>
     export default {
-        
+        data() {
+			return {
+				time: ''
+			}
+		},
+		mounted(){
+			this.time=uiScript.formatDate(new Date(),'-')
+		}
     }
 </script>
 

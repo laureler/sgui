@@ -30,9 +30,10 @@
 			}
 		},
 		mounted(){
-			console.log(uiScript)
+	
 			var img = document.getElementById('getBase');
 			this.base64=uiScript.getBase64(img)
+			
 		}
     }
 </script>
