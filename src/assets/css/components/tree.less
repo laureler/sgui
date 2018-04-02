@@ -1,0 +1,127 @@
+ .tree-wrap{
+ 	 overflow: auto;
+	.v-tree{
+	 	color:#606266;
+		overflow: hidden;
+		font-size: 14px;
+	}
+	li{
+		min-height: 28px;
+   		line-height: 28px;
+		.item{
+			a{
+				cursor: pointer;
+				padding: 4px;
+				.edit{
+					background-image: url('../../images/brush.png');
+					background-size: 100% 100%;
+					width: 18px;
+					height: 18px;
+					vertical-align:middle;
+					display: inline-block;
+					margin-left: 12px;
+				}
+				.add{
+					background-image: url('../../images/add.png');
+					background-size: 100% 100%;
+					width: 18px;
+					height: 18px;
+					vertical-align:middle;
+					display: inline-block;
+					margin-left: 2px;
+				}
+				// .up{
+				// 	background-image: url('../../images/packup.png');
+				// 	background-size: 100% 100%;
+				// 	width: 18px;
+				// 	height: 18px;
+				// 	vertical-align:middle;
+				// 	display: inline-block;
+				// 	margin-left: 2px;
+				// }
+				// .down{
+				// 	background-image: url('../../images/unfold.png');
+				// 	background-size: 100% 100%;
+				// 	width: 18px;
+				// 	height: 18px;
+				// 	vertical-align:middle;
+				// 	display: inline-block;
+				//margin-left: 2px;
+				// }
+				.remove{
+					background-image: url('../../images/empty.png');
+					background-size: 100% 100%;
+					width: 18px;
+					height: 18px;
+					vertical-align:middle;
+					display: inline-block;
+					margin-left: 2px;
+				}
+				&:hover{
+					.edit,.add,.up,.remove,.down{display: inline-block!important;}
+				}
+			}
+			&:hover{
+				background-color: #f4f4f4;
+				cursor: pointer;
+				 
+				 
+			}
+			 
+			 
+			 
+		 
+   		 
+		}
+   		 
+   		ul{
+   			padding-left: 10px;
+   		}
+	}	 
+}
+	  
+ 
+	 
+	.tree-wrap .v-tree .root_open{
+		background-color: pink;
+	}
+	.tree-wrap .v-tree .root_close{
+		background-image: url('../../images/right.png');
+		background-size: 100% 100%;
+	}
+	.tree-wrap .v-tree .roots_docu{
+		background-image: url('../../images/fileload.png');
+		background-size: 100% 100%;
+	}
+	.tree-wrap .v-tree .bottom_open{
+		background-color: pink;
+	}
+	.tree-wrap .v-tree .bottom_close{
+		background-image: url('../../images/right.png');
+		background-size: 100% 100%;
+	}
+	.tree-wrap .v-tree .center_open{
+		background-color: pink;
+	}
+	.tree-wrap .v-tree .center_close{
+		background-image: url('../../images/right.png');
+		background-size: 100% 100%;
+	}
+	.tree-wrap .v-tree .center_docu{
+		background-image: url('../../images/file.png');
+		background-size: 100% 100%;
+	}
+	.tree-wrap .v-tree .bottom_docu{
+		background-image: url('../../images/file.png');
+		background-size: 100% 100%;
+	}
+	.tree-wrap .v-tree li .switch{
+		width: 18px;
+		height: 18px;
+		display: inline-block;
+	 	margin-top: 4px;
+	 	margin-left: 2px;
+		cursor: pointer;
+		float: left;
+	}
+ 

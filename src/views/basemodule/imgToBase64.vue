@@ -32,7 +32,7 @@
 		mounted(){
 	
 			var img = document.getElementById('getBase');
-			this.base64=uiScript.getBase64(img)
+			this.base64=uiScript.getBase64(img);
 			
 		}
     }
