@@ -83,8 +83,8 @@
 						</ul>
 						<p class="list-title">组件服务 - 工具库</p>
 						<ul class="list-menu">
-							<router-link to="basemodule/input" tag="li"><a>图片转base64</a></router-link> 
-							<router-link to="basemodule/input" tag="li"><a>日期格式化</a></router-link> 
+							<router-link to="basemodule/imgTobase64" tag="li"><a>图片转base64</a></router-link> 
+							<router-link to="basemodule/formatDate" tag="li"><a>日期格式化</a></router-link> 
 							<router-link to="basemodule/input" tag="li"><a>数字格式化</a></router-link> 
 							<router-link to="basemodule/input" tag="li"><a>url解析</a></router-link> 
 							<router-link to="basemodule/input" tag="li"><a>string处理</a></router-link> 

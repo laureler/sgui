@@ -3,7 +3,9 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import uiScript from './script/uiScript.js'
 
+// Vue.prototype.$uiScript=uiScript
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
