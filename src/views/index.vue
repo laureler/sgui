@@ -46,7 +46,7 @@
 						</ul>
 						<p class="list-title">基础组件 - 图表类</p>
 						<ul class="list-menu">
-							<router-link to="basemodule/input" tag="li"><a>二维码</a></router-link> 
+							<router-link to="basemodule/qrcode" tag="li"><a>二维码</a></router-link> 
 							<router-link to="basemodule/input" tag="li"><a>图片放大</a></router-link> 
 							<router-link to="basemodule/input" tag="li"><a>图片缩略图</a></router-link> 
 							<router-link to="basemodule/input" tag="li"><a>echart</a></router-link> 
@@ -86,8 +86,8 @@
 							<router-link to="basemodule/imgTobase64" tag="li"><a>图片转base64</a></router-link> 
 							<router-link to="basemodule/formatDate" tag="li"><a>日期格式化</a></router-link> 
 							<router-link to="basemodule/numFormat" tag="li"><a>数字格式化</a></router-link> 
-							<router-link to="basemodule/input" tag="li"><a>url解析</a></router-link> 
-							<router-link to="basemodule/input" tag="li"><a>string处理</a></router-link> 
+							<router-link to="basemodule/url" tag="li"><a>url解析</a></router-link> 
+							<router-link to="basemodule/trim" tag="li"><a>string处理（去除首尾空格）</a></router-link> 
 							<router-link to="basemodule/input" tag="li"><a>多语言（i18n）</a></router-link>
 							<router-link to="basemodule/input" tag="li"><a>可拖拽</a></router-link>    
 						</ul>

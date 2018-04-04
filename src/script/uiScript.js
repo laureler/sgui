@@ -423,7 +423,7 @@
             if (!search) {
                 return {}
             }
-            return JSON.parse('{"' + decodeURIComponent(search).replace(/"/g, '\\"').replace(/&/g, '","').replace(/=/g, '":"') + '"}')
+            return JSON.parse('{"' + decodeURIComponent(search).replace(/"/g, '').replace(/&/g, '","').replace(/=/g, '":"') + '"}')
         },
         /**
          *
@@ -563,8 +563,38 @@
                 j = (j = i.length) > 3 ? j % 3 : 0;
                 return symbol + negative + (j ? i.substr(0, j) + thousand : "") + i.substr(j).replace(/(\d{3})(?=\d)/g, "$1" + thousand) + (places ? decimal + Math.abs(number - i).toFixed(places).slice(2) : "");
 
+        },
+         /**
+         * 图片压缩
+         * @param {Image} source_img_obj 原图片
+         * @param {Integer} quality 压缩比 0-100
+         * @param {string} output_format 返回的图片类型，jpg/png
+         * @return {Image} 压缩后的图片
+         */
+        compress: function(source_img_obj, quality, output_format){
+            var mime_type = "image/jpeg";
+            if(output_format!=undefined && output_format=="png"){
+               mime_type = "image/png";
+            }
+            var cvs = document.createElement('canvas');
+            //naturalWidth真实图片的宽度
+            cvs.width = source_img_obj.naturalWidth;
+            cvs.height = source_img_obj.naturalHeight;
+            var ctx = cvs.getContext("2d").drawImage(source_img_obj, 0, 0);
+            var newImageData = cvs.toDataURL(mime_type, quality/100);
+            var result_image_obj = new Image();
+            result_image_obj.src = newImageData;
+            return result_image_obj;
+       },
+        /**
+         * 
+         * 去除首尾空格
+         * @param {str} str 
+         * @returns 
+         */
+        trim:function(str){
+            return str.replace(/(^[\s\n\t]+|[\s\n\t]+$)/g, "");
         }
-
 
 
     }

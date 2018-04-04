@@ -6,7 +6,10 @@ import imgToBase64 from '@/views/basemodule/imgToBase64'
 import formatDate from '@/views/basemodule/formatDate'
 import numFormat from '@/views/basemodule/numFormat'
 
-// import Tree from '@/views/basemodule/tree'
+import Tree from '@/views/basemodule/tree'
+import url from '@/views/basemodule/url'
+import trim from '@/views/basemodule/trim'
+import qrcode from '@/views/basemodule/qrcode'
 
 Vue.use(Router)
 
@@ -43,10 +46,25 @@ export default new Router({
       component: numFormat 
     },
 
-    //  {
-    //   path: '/basemodule/tree',
-    //   name: 'Tree',
-    //   component: Tree 
-    // },
+     {
+      path: '/basemodule/tree',
+      name: 'Tree',
+      component: Tree 
+    },
+     {
+      path: '/basemodule/url',
+      name: 'url',
+      component: url 
+    },
+     {
+      path: '/basemodule/trim',
+      name: 'trim',
+      component: trim 
+    },
+     {
+      path: '/basemodule/qrcode',
+      name: 'qrcode',
+      component: qrcode 
+    },
   ]
 })
