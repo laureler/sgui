@@ -11,6 +11,8 @@ import url from '@/views/basemodule/url'
 import trim from '@/views/basemodule/trim'
 import qrcode from '@/views/basemodule/qrcode'
 
+import multiLine from '@/views/basemodule/multiLine'
+
 Vue.use(Router)
 
 export default new Router({
@@ -18,53 +20,58 @@ export default new Router({
     {
       path: '/',
       name: 'Index',
-      component: Index 
+      component: Index
     },
     {
       path: '/index',
       name: 'Index',
-      component: Index 
+      component: Index
     },
     {
       path: '/basemodule/input',
       name: 'Input',
-      component: Input 
+      component: Input
     },
     {
       path: '/basemodule/imgToBase64',
       name: 'imgToBase64',
-      component: imgToBase64 
+      component: imgToBase64
     },
     {
       path: '/basemodule/formatDate',
       name: 'formatDate',
-      component: formatDate 
+      component: formatDate
     },
     {
       path: '/basemodule/numFormat',
       name: 'numFormat',
-      component: numFormat 
+      component: numFormat
     },
 
      {
       path: '/basemodule/tree',
       name: 'Tree',
-      component: Tree 
+      component: Tree
     },
      {
       path: '/basemodule/url',
       name: 'url',
-      component: url 
+      component: url
     },
      {
       path: '/basemodule/trim',
       name: 'trim',
-      component: trim 
+      component: trim
     },
      {
       path: '/basemodule/qrcode',
       name: 'qrcode',
-      component: qrcode 
+      component: qrcode
+    },
+    {
+      path: '/basemodule/multiLine',
+      name: 'multiLine',
+      component: multiLine
     },
   ]
 })
