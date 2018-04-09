@@ -36,11 +36,11 @@
 					<div class="module-list">
 						<p class="list-title">基础组件 - 导航类</p>
 						<ul class="list-menu">
-							<router-link to="basemodule/input" tag="li"><a>导航菜单</a></router-link>
+							<router-link to="basemodule/navigation" tag="li"><a>导航菜单</a></router-link>
 							<router-link to="basemodule/input" tag="li"><a>步骤条</a></router-link>
 							<router-link to="basemodule/input" tag="li"><a>面包屑</a></router-link>
 							<router-link to="basemodule/input" tag="li"><a>步骤条（时间轴）</a></router-link>
-							<router-link to="basemodule/input" tag="li"><a>tab切换</a></router-link>
+							<router-link to="basemodule/tab" tag="li"><a>tab切换</a></router-link>
 							<router-link to="basemodule/input" tag="li"><a>粘性头部</a></router-link>
 							<router-link to="basemodule/input" tag="li"><a>折叠面板</a></router-link>
 						</ul>

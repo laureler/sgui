@@ -13,6 +13,9 @@ import qrcode from '@/views/basemodule/qrcode'
 
 import multiLine from '@/views/basemodule/multiLine'
 
+import navigation from '@/views/basemodule/navigation'
+import tab from '@/views/basemodule/tab'
+
 Vue.use(Router)
 
 export default new Router({
@@ -72,6 +75,16 @@ export default new Router({
       path: '/basemodule/multiLine',
       name: 'multiLine',
       component: multiLine
+    },
+    {
+      path: '/basemodule/navigation',
+      name: 'navigation',
+      component: navigation
+    },
+    {
+      path: '/basemodule/tab',
+      name: 'tab',
+      component: tab
     },
   ]
 })
