@@ -14,6 +14,9 @@ import qrcode from '@/views/basemodule/qrcode'
 import multiLine from '@/views/basemodule/multiLine'
 import uiradio from '@/views/basemodule/uiRadio'
 
+import navigation from '@/views/basemodule/navigation'
+import tab from '@/views/basemodule/tab'
+
 Vue.use(Router)
 
 export default new Router({
@@ -75,6 +78,16 @@ export default new Router({
       component: multiLine
     },
     {
+      path: '/basemodule/navigation',
+      name: 'navigation',
+      component: navigation
+    },
+    {
+      path: '/basemodule/tab',
+      name: 'tab',
+      component: tab
+    },
+	{
       path: '/basemodule/uiRadio',
       name: 'uiRadio',
       component: uiradio
