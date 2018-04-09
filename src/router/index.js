@@ -13,9 +13,15 @@ import qrcode from '@/views/basemodule/qrcode'
 
 import multiLine from '@/views/basemodule/multiLine'
 import uiradio from '@/views/basemodule/uiRadio'
+import checkbox  from '@/views/basemodule/checkbox'
+import numIncrease from '@/views/basemodule/numIncrease'
+import select from '@/views/basemodule/select'
+import sliderbar from '@/views/basemodule/sliderbar'
+import shuttleBox from '@/views/basemodule/shuttleBox'
 
 import navigation from '@/views/basemodule/navigation'
 import tab from '@/views/basemodule/tab'
+
 
 Vue.use(Router)
 
@@ -87,10 +93,35 @@ export default new Router({
       name: 'tab',
       component: tab
     },
-	{
+	  {
       path: '/basemodule/uiRadio',
       name: 'uiRadio',
       component: uiradio
+    },
+    {
+      path: '/basemodule/checkbox',
+      name: 'checkbox',
+      component: checkbox
+    },
+    {
+      path: '/basemodule/numIncrease',
+      name: 'numIncrease',
+      component: numIncrease
+    },
+    {
+      path: '/basemodule/select',
+      name: 'select',
+      component: select
+    },
+    {
+      path: '/basemodule/sliderbar',
+      name: 'sliderbar',
+      component: sliderbar
+    },
+    {
+      path: '/basemodule/shuttleBox',
+      name: 'shuttleBox',
+      component: shuttleBox
     },
   ]
 })
