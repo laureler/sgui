@@ -12,6 +12,7 @@ import trim from '@/views/basemodule/trim'
 import qrcode from '@/views/basemodule/qrcode'
 
 import multiLine from '@/views/basemodule/multiLine'
+import uiradio from '@/views/basemodule/uiRadio'
 
 Vue.use(Router)
 
@@ -72,6 +73,11 @@ export default new Router({
       path: '/basemodule/multiLine',
       name: 'multiLine',
       component: multiLine
+    },
+    {
+      path: '/basemodule/uiRadio',
+      name: 'uiRadio',
+      component: uiradio
     },
   ]
 })
