@@ -47,7 +47,7 @@
 						<p class="list-title">基础组件 - 图表类</p>
 						<ul class="list-menu">
 							<router-link to="basemodule/qrcode" tag="li"><a>二维码</a></router-link>
-							<router-link to="basemodule/input" tag="li"><a>图片放大</a></router-link>
+							<router-link to="basemodule/glass" tag="li"><a>图片放大</a></router-link>
 							<router-link to="basemodule/input" tag="li"><a>图片缩略图</a></router-link>
 							<router-link to="basemodule/input" tag="li"><a>echart</a></router-link>
 							<router-link to="basemodule/input" tag="li"><a>表格</a></router-link>
