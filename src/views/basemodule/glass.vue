@@ -24,7 +24,7 @@
                     <p>id {dom} 节点</p>
                     <p>img {string} 图片路径</p>
                     <p>width {number} 正方形放大镜的宽度</p>
-                    <p>mulriple {number} 放大倍数 大于1的整数</p>
+                    <p>mulriple {number} 放大倍数 大于1的</p>
                     
   				</el-collapse-item>
   				<el-collapse-item title="功能演示" name="3">
