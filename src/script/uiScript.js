@@ -84,15 +84,15 @@
             }else{
                 return year + symbol + month + symbol + date + ' ' + hour + ':' + minute + ':' + second;
             }
-           
+
         },
         /**
          * 某个时间在当前时间的多久前
-         * 
-         * @param {date} time 
+         *
+         * @param {date} time
          */
         timeAgo:function(time){
-           
+
             var timeTest=time.getTime();
             var now=(new Date()).getTime();
             var rTime=now-timeTest;
@@ -103,7 +103,7 @@
                 if(rTime/86400000>1){
                     return parseInt(rTime/86400000)+'天前';
                 }else{
-                  
+
                     if(rTime/3600000>1){
                         return parseInt(rTime/3600000)+'小时前';
                     }else{
@@ -118,29 +118,29 @@
         },
         /**
          * 倒计时
-         * 
-         * @param {string} id 
-         * @param {Date} endDate 
-         *  
+         *
+         * @param {string} id
+         * @param {Date} endDate
+         *
          */
         countdown:function(id,endDate){
-            
+
              var showTime=function(){
-                 
-                    var date = new Date();  
-                    var now = date.getTime();  
-                    var end = endDate.getTime();  
-                    var leftTime = end-now; 
-                    var d,h,m,s;  
-                    if (leftTime>=0) {  
-                        d = Math.floor(leftTime/1000/60/60/24);  
-                        h = Math.floor(leftTime/1000/60/60%24);  
-                        m = Math.floor(leftTime/1000/60%60);  
-                        s = Math.floor(leftTime/1000%60); 
+
+                    var date = new Date();
+                    var now = date.getTime();
+                    var end = endDate.getTime();
+                    var leftTime = end-now;
+                    var d,h,m,s;
+                    if (leftTime>=0) {
+                        d = Math.floor(leftTime/1000/60/60/24);
+                        h = Math.floor(leftTime/1000/60/60%24);
+                        m = Math.floor(leftTime/1000/60%60);
+                        s = Math.floor(leftTime/1000%60);
                     } else{
                         clearInterval(t);
                     }
-                    document.getElementById(id).innerHTML=d+'天'+h+'时'+m+'分'+s+'秒';                                
+                    document.getElementById(id).innerHTML=d+'天'+h+'时'+m+'分'+s+'秒';
             }
              var t = setInterval(showTime,1000);
          },
@@ -516,10 +516,10 @@
          * @param {paramName} 需要获取的参数
          * @returns  {paramValue} 参数值
         /**
-         * 
-         * 
-         * @param {any} paramName 
-         * @returns 
+         *
+         *
+         * @param {any} paramName
+         * @returns
          */
         getParam: function (paramName) {
             var paramValue = '', isFound = false;
@@ -539,9 +539,9 @@
             return paramValue;
         },
         /**
-         * 
+         *
          * 图片转base64
-         * @param {object or string} data 
+         * @param {object or string} data
          */
         getBase64:function(data){
             this.init=function(img){
@@ -556,27 +556,27 @@
             if(typeof(data)==='object'){
                 return this.init(data);
             }else{
-                var image =  new Image();  
+                var image =  new Image();
                 image.src=data;
-                
+
                 if(image.fileSize>0 || (image.width > 0 && image.height > 0)){
                     return  this.init(image)
                 }else{
                     console.log('图片不存在，或图片地址有误');
                 }
             }
-            
-           
+
+
         },
         /**
-         * 
+         *
          * 数字格式化
-         * @param {num} number 
-         * @param {num} places 
-         * @param {string} symbol 
-         * @param {string} thousand 
-         * @param {string} decimal 
-         * @returns 
+         * @param {num} number
+         * @param {num} places
+         * @param {string} symbol
+         * @param {string} thousand
+         * @param {string} decimal
+         * @returns
          */
         NumFormat :function(number, places, symbol, thousand, decimal){
             	places = !isNaN(places = Math.abs(places)) ? places : 2;
@@ -612,10 +612,10 @@
             return result_image_obj;
        },
         /**
-         * 
+         *
          * 去除首尾空格
-         * @param {str} str 
-         * @returns 
+         * @param {str} str
+         * @returns
          */
         trim:function(str){
             return str.replace(/(^[\s\n\t]+|[\s\n\t]+$)/g, "");
@@ -624,6 +624,44 @@
             return {
                 left:dom.getBoundingClientRect().left+document.documentElement.scrollLeft,
                 top:dom.getBoundingClientRect().top+document.documentElement.scrollTop
+            }
+        },
+        /*
+        * 多行文本省略
+        * @param {str} id
+        * @param {number} rows
+        * @param {str} text
+        * @returns
+        * */
+        multiOverflowhidden:function(id,rows,str){
+            var el=document.querySelector(id);
+
+            el.addEventListener('mouseover',function () {
+                this.title=str;
+            })
+            var lineHeight=window.getComputedStyle(el,null).lineHeight;
+            var at = rows* parseInt(lineHeight);
+            var tempstr =str;
+            el.innerHTML =tempstr;
+
+            var len =tempstr.length;
+            var i=0;
+            if(el.offsetHeight <= at){
+
+            }else{
+              var temp ="";
+              el.innerHTML =temp;
+              while(el.offsetHeight <= at){
+                temp =tempstr.substring(0,i+1);
+                i++;
+                el.innerHTML =temp;
+              }
+
+              var slen =temp.length;
+              tempstr =temp.substring(0,slen-1);
+              len =tempstr.length;
+              el.innerHTML =tempstr.substring(0,len-3) +"...";
+              el.height=at+'px';
             }
         },
 

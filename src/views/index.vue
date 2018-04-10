@@ -25,22 +25,22 @@
 						</ul>
 						<p class="list-title">基础组件 - 表单控件</p>
 						<ul class="list-menu">
-							<router-link to="basemodule/input" tag="li"><a>单选框</a></router-link>
-							<router-link to="basemodule/input" tag="li"><a>多选框</a></router-link>
-							<router-link to="basemodule/input" tag="li"><a>数字步增</a></router-link>
-							<router-link to="basemodule/input" tag="li"><a>select选择</a></router-link>
-							<router-link to="basemodule/input" tag="li"><a>滑块条</a></router-link>
-							<router-link to="basemodule/input" tag="li"><a>穿梭框</a></router-link>
+							<router-link to="basemodule/uiRadio" tag="li"><a>单选框</a></router-link>
+							<router-link to="basemodule/checkbox" tag="li"><a>多选框</a></router-link>
+							<router-link to="basemodule/numIncrease" tag="li"><a>数字步增</a></router-link>
+							<router-link to="basemodule/select" tag="li"><a>select选择</a></router-link>
+							<router-link to="basemodule/sliderbar" tag="li"><a>滑块条</a></router-link>
+							<router-link to="basemodule/shuttleBox" tag="li"><a>穿梭框</a></router-link>
 						</ul>
 					</div>
 					<div class="module-list">
 						<p class="list-title">基础组件 - 导航类</p>
 						<ul class="list-menu">
-							<router-link to="basemodule/input" tag="li"><a>导航菜单</a></router-link>
+							<router-link to="basemodule/navigation" tag="li"><a>导航菜单</a></router-link>
 							<router-link to="basemodule/input" tag="li"><a>步骤条</a></router-link>
 							<router-link to="basemodule/input" tag="li"><a>面包屑</a></router-link>
 							<router-link to="basemodule/input" tag="li"><a>步骤条（时间轴）</a></router-link>
-							<router-link to="basemodule/input" tag="li"><a>tab切换</a></router-link>
+							<router-link to="basemodule/tab" tag="li"><a>tab切换</a></router-link>
 							<router-link to="basemodule/input" tag="li"><a>粘性头部</a></router-link>
 							<router-link to="basemodule/input" tag="li"><a>折叠面板</a></router-link>
 						</ul>
