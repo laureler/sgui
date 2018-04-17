@@ -19,6 +19,11 @@ import numIncrease from '@/views/basemodule/numIncrease'
 import select from '@/views/basemodule/select'
 import sliderbar from '@/views/basemodule/sliderbar'
 import shuttleBox from '@/views/basemodule/shuttleBox'
+import avatar from '@/views/basemodule/avatar'
+import signet from '@/views/basemodule/signet'
+import badge from '@/views/basemodule/badge'
+import rate from '@/views/basemodule/rate'
+
 
 import navigation from '@/views/basemodule/navigation'
 import tab from '@/views/basemodule/tab'
@@ -128,6 +133,26 @@ export default new Router({
       path: '/basemodule/shuttleBox',
       name: 'shuttleBox',
       component: shuttleBox
+    },
+    {
+      path: '/basemodule/avatar',
+      name: 'avatar',
+      component: avatar
+    },
+    {
+      path: '/basemodule/signet',
+      name: 'signet',
+      component: signet
+    },
+    {
+      path: '/basemodule/badge',
+      name: 'badge',
+      component: badge
+    },
+    {
+      path: '/basemodule/rate',
+      name: 'rate',
+      component: rate
     },
   ]
 })
