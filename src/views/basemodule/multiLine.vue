@@ -17,6 +17,7 @@
           <el-collapse-item title="使用说明" name="2">
             示例代码：  uiScript.multiOverflowhidden(id,rows,text);
             参数类型：  id为指定多行省略的id或类名，rows指定第几行省略，text为文本内容
+
           </el-collapse-item>
 
         </el-collapse>
