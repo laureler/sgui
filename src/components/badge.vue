@@ -3,9 +3,9 @@
         <slot></slot>
         <sup :class="dotClasses" v-show="badge"></sup>
     </span>
-  <span v-else :class="classes" ref="badge">
-        <slot></slot>
-        <sup v-if="count" :class="countClasses" v-show="badge">{{ finalCount }}</sup>
+    <span v-else :class="classes" ref="badge">
+          <slot></slot>
+          <sup v-if="count" :class="countClasses" v-show="badge">{{ finalCount }}</sup>
     </span>
 </template>
 <script>
@@ -65,5 +65,57 @@
   };
 </script>
 <style scoped>
-
+  *{
+    box-sizing: border-box;
+  }
+  .ivu-badge {
+    position: relative;
+    display: inline-block;
+    line-height: 1;
+    vertical-align: middle;
+  }
+  .ivu-badge-dot {
+    position: absolute;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    -webkit-transform-origin: 0 center;
+    transform-origin: 0 center;
+    top: -4px;
+    right: -8px;
+    height: 8px;
+    width: 8px;
+    border-radius: 100%;
+    background: #ed3f14;
+    z-index: 10;
+    box-shadow: 0 0 0 1px #fff;
+  }
+  .ivu-badge-count {
+    position: absolute;
+    -webkit-transform: translateX(50%);
+    transform: translateX(50%);
+    top: -10px;
+    right: 0;
+    height: 20px;
+    border-radius: 10px;
+    min-width: 20px;
+    background: #ed3f14;
+    border: 1px solid transparent;
+    color: #fff;
+    line-height: 18px;
+    text-align: center;
+    padding: 0 6px;
+    font-size: 12px;
+    white-space: nowrap;
+    -webkit-transform-origin: -10% center;
+    transform-origin: -10% center;
+    z-index: 10;
+    box-shadow: 0 0 0 1px #fff;
+  }
+  .ivu-badge-count-alone {
+    top: auto;
+    display: block;
+    position: relative;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
 </style>
