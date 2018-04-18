@@ -94,7 +94,7 @@
     components:{badge},
     data(){
       return{
-        activeNames:['1','2'],
+        activeNames:['1','2','3'],
         code1:`<badge count="3">
               <a href="#" class="demo-badge"></a>
             </badge>`,

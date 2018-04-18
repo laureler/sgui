@@ -95,7 +95,7 @@
   export default {
     data(){
       return{
-        activeNames:['1','2'],
+        activeNames:['1','2','3'],
         user: UserList[0],
         color: ColorList[0],
         src:'../../../static/images/lockon.jpg',
