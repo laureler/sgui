@@ -6,6 +6,11 @@
   </div>
 </template>
 <style lang="less" scoped>
+  .header{
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
   .title {
     height: 50px;
     line-height: 50px;
