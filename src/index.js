@@ -1,7 +1,9 @@
 import SgInput from './components/input';
+import SgTree from './components/tree';
 
 const components = {
-  SgInput
+  SgInput,
+  SgTree
 };
 
 const sgui = {
