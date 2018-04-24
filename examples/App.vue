@@ -8,7 +8,7 @@
             <div class="module-list">
               <p class="list-title">基础组件 - 数据输入</p>
               <ul class="list-menu">
-                <router-link to="/" tag="li"><a>input、textare、搜索输入框</a></router-link>
+                <router-link to="/input" tag="li"><a>input、textare、搜索输入框</a></router-link>
                 <router-link to="/" tag="li"><a>富文本编辑</a></router-link>
                 <router-link to="/" tag="li"><a>选择输入-时间、日期选择</a></router-link>
                 <router-link to="/" tag="li"><a>选择输入-人员、地区选择</a></router-link>
@@ -146,6 +146,7 @@
   }
 </script>
 <style lang="less" scoped>
+  @import "../src/styles/index.less";
   .content {
     display: flex;
     background-color: #454759;

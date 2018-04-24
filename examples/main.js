@@ -7,7 +7,6 @@ import uiscript from '../src/script/uiScript'
 Vue.config.debug = true;
 
 Vue.use(VueRouter);
-console.log(uiscript)
 Vue.use(sgui)
 // 路由配置
 const router = new VueRouter({
