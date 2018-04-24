@@ -45,7 +45,7 @@
   // import calcTextareaHeight from '../../utils/calcTextareaHeight';
   import Emitter from '../../mixins/emitter';
 
-  const prefixCls = 'ivu-input';
+  const prefixCls = 'sg-input';
 
   export default {
     name: 'SgInput',

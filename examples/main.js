@@ -13,6 +13,10 @@ const router = new VueRouter({
   esModule: false,
   routes: [
     {
+      path: '/',
+      component: (resolve) => require(['./index.vue'], resolve)
+    },
+    {
       path: '/input',
       component: (resolve) => require(['./routers/input.vue'], resolve)
     }
