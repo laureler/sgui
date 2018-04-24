@@ -19,6 +19,10 @@ const router = new VueRouter({
     {
       path: '/input',
       component: (resolve) => require(['./routers/input.vue'], resolve)
+    },
+    {
+      path: '/tree',
+      component: (resolve) => require(['./routers/tree.vue'], resolve)
     }
   ]
 });
