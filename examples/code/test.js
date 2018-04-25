@@ -1,4 +1,39 @@
-<template>
+let code = {};
+
+code.tree = `
+├─avatar
+│      avatar.vue
+│      index.js
+│      
+├─badge
+│      badge.vue
+│      index.js
+│      
+├─input
+│      index.js
+│      input.vue
+│      
+`;
+code.example=`
+    anchor.vue  ---标题组件，内含标题及锚点
+    article.vue ---文章组件，内含文章主题以及目录
+    code.vue    ---代码块组件
+    demo.vue    ---组件示例，嵌套代码块组件
+    menu.vue    ---组件库目录
+    `;
+code.anchor=`<Anchor title="UI团队组件库开发须知" h2></Anchor>`;
+code.article=`import iArticle from ../components/article`;
+code.code=`<i-code lang="html" slot="code">{{ code.icon }}</i-code>`;
+code.demo=` <Demo title="基础用法">
+      <div slot="demo">
+        <sg-input v-model="value" placeholder="Enter something..." style="width: 300px"></sg-input>
+      </div>
+      <div slot="desc">
+        <p>基本用法，可以使用 <code>v-model</code> 实现数据的双向绑定。可以直接设置 style 来改变输入框的宽度，默认 100%。可自己设置宽度</p>
+      </div>
+      <i-code lang="html" slot="code">{{ code.base }}</i-code>
+    </Demo>`;
+code.input=`<template>
   <i-article>
   <article>
     <Anchor title="sg-input" h1></Anchor>
@@ -231,3 +266,7 @@
   }
 </script>
 
+`;
+code.menu=`<router-link to="/input" tag="li" class="ready"><a>input、textare、搜索输入框</a></router-link>`
+
+export default code;

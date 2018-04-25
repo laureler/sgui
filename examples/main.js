@@ -15,7 +15,12 @@ const router = new VueRouter({
     {
       path: '/',
       component: (resolve) => require(['./index.vue'], resolve),
+      redirect:'/test',
       children: [
+        {
+          path: 'test',
+          component: (resolve) => require(['./routers/test.vue'], resolve)
+        },
         {
           path: 'input',
           component: (resolve) => require(['./routers/input.vue'], resolve)

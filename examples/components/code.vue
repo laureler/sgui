@@ -3,7 +3,7 @@
     <div class="bd-clipboard">
       <button class="btn-clipboard copy" title="复制到剪贴板" @click="clip">复制</button>
     </div>
-    <pre :class="{bg: bg}"><code :class="language" ref="code" style="background-color: #f7f7f9;padding:15px;"><slot></slot></code></pre>
+    <pre :class="{bg: bg}"><code :class="language"  ref="code" style="background-color: #f7f7f9;padding:15px;"><slot></slot></code></pre>
   </div>
 </template>
 <script>

@@ -8,8 +8,7 @@
       <div class="col-12 col-md-4 col-xl-2 bd-sidebar">
         <sg-menu></sg-menu>
       </div>
-      <div class="d-none d-xl-block col-xl-2 bd-toc"></div>
-      <main class="col-12 col-md-8 col-xl-8 py-md-3 pl-md-5">
+      <main class="col-12 col-md-8 col-xl-10">
         <router-view></router-view>
       </main>
     </div>

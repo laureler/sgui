@@ -1,5 +1,6 @@
 <template>
-  <div>
+  <div class="demo">
+    <Avatar :title="title" h4></Avatar>
     <slot name="desc"></slot>
     <div class="bd-example" :id="title">
       <slot name="demo"></slot>
@@ -8,7 +9,7 @@
   </div>
 </template>
 <script>
-
+import Avatar from './anchor'
   export default {
     name: 'Demo',
     props: {
@@ -21,5 +22,6 @@
         default: false
       },
     },
+    components:{Avatar}
   }
 </script>
