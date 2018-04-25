@@ -19,9 +19,29 @@ const router = new VueRouter({
         {
           path: 'input',
           component: (resolve) => require(['./routers/input.vue'], resolve)
+        },
+        {
+          path: 'tree',
+          component: (resolve) => require(['./routers/tree.vue'], resolve)
+        },
+        {
+          path: 'avatar',
+          component: (resolve) => require(['./routers/avatar.vue'], resolve)
+        },
+        {
+          path: 'signet',
+          component: (resolve) => require(['./routers/signet.vue'], resolve)
+        },
+        {
+          path: 'badge',
+          component: (resolve) => require(['./routers/badge.vue'], resolve)
+        },
+        {
+          path: 'rate',
+          component: (resolve) => require(['./routers/rate.vue'], resolve)
         }
-      ]
-    }
+      ],
+    },
   ]
 });
 new Vue({
