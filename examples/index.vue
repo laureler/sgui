@@ -56,10 +56,10 @@
             </ul>
             <p class="list-title">基础组件 - 其他</p>
             <ul class="list-menu">
-              <router-link to="/" tag="li"><a>头像</a></router-link>
-              <router-link to="/" tag="li"><a>盖章</a></router-link>
-              <router-link to="/" tag="li"><a>标记badge</a></router-link>
-              <router-link to="/" tag="li"><a>评分</a></router-link>
+              <router-link to="/avatar" tag="li"><a>头像</a></router-link>
+              <router-link to="/signet" tag="li"><a>盖章</a></router-link>
+              <router-link to="/badge" tag="li"><a>标记badge</a></router-link>
+              <router-link to="/rate" tag="li"><a>评分</a></router-link>
             </ul>
           </div>
           <div class="module-list">
