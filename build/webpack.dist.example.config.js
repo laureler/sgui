@@ -11,7 +11,7 @@ const FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin');
 
 
 module.exports = merge(webpackBaseConfig, {
-  devtool: 'eval-source-map',
+  // devtool: 'eval-source-map',
 
   // 入口
   entry: {
@@ -32,6 +32,10 @@ module.exports = merge(webpackBaseConfig, {
     }
   },
   plugins: [
+    new webpack.optimize.UglifyJsPlugin({
+      parallel: true,
+      sourceMap: true,
+    }),
     new webpack.optimize.CommonsChunkPlugin({ name: 'vendors', filename: 'vendor.bundle.js' }),
     new HtmlWebpackPlugin({
       inject: true,

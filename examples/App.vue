@@ -10,7 +10,7 @@
   }
 </script>
 <style lang="less">
-  @import "../src/styles/index";
+  /*@import "../src/styles/index";*/
 </style>
 
 
