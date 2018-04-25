@@ -14,11 +14,13 @@ const router = new VueRouter({
   routes: [
     {
       path: '/',
-      component: (resolve) => require(['./index.vue'], resolve)
-    },
-    {
-      path: '/input',
-      component: (resolve) => require(['./routers/input.vue'], resolve)
+      component: (resolve) => require(['./index.vue'], resolve),
+      children: [
+        {
+          path: 'input',
+          component: (resolve) => require(['./routers/input.vue'], resolve)
+        }
+      ]
     }
   ]
 });

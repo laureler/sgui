@@ -21,28 +21,28 @@
         @input="handleInput"
         @change="handleChange">
     </template>
-    <!--<textarea-->
-    <!--v-else-->
-    <!--:wrap="wrap"-->
-    <!--ref="textarea"-->
-    <!--:class="textareaClasses"-->
-    <!--:style="textareaStyles"-->
-    <!--:placeholder="placeholder"-->
-    <!--:disabled="disabled"-->
-    <!--:readonly="readonly"-->
-    <!--:name="name"-->
-    <!--:value="currentValue"-->
-    <!--:autofocus="autofocus"-->
-    <!--@keyup.enter="handleEnter"-->
-    <!--@focus="handleFocus"-->
-    <!--@blur="handleBlur"-->
-    <!--@input="handleInput">-->
-    <!--</textarea>-->
+    <textarea
+    v-else
+    :wrap="wrap"
+    ref="textarea"
+    :class="textareaClasses"
+    :style="textareaStyles"
+    :placeholder="placeholder"
+    :disabled="disabled"
+    :rows="rows"
+    :readonly="readonly"
+    :value="currentValue"
+    :autofocus="autofocus"
+    @keyup.enter="handleEnter"
+    @focus="handleFocus"
+    @blur="handleBlur"
+    @input="handleInput">
+    </textarea>
   </div>
 </template>
 <script>
   import { oneOf, findComponentUpward } from '../../utils/assist';
-  // import calcTextareaHeight from '../../utils/calcTextareaHeight';
+  import calcTextareaHeight from '../../utils/calcTextareaHeight';
   import Emitter from '../../mixins/emitter';
 
   const prefixCls = 'sg-input';
@@ -77,6 +77,10 @@
       autofocus: {
         type: Boolean,
         default: false
+      },
+      rows:{
+        type: Number,
+        default: 2
       },
       clearable: {
         type: Boolean,
@@ -114,6 +118,14 @@
           }
         ];
       },
+      textareaClasses () {
+        return [
+          `${prefixCls}`,
+          {
+            [`${prefixCls}-disabled`]: this.disabled
+          }
+        ];
+      }
     },
     methods: {
       handleEnter (event) {
@@ -151,17 +163,17 @@
           this.dispatch('FormItem', 'on-form-change', value);
         }
       },
-      // resizeTextarea () {
-      //   const autosize = this.autosize;
-      //   if (!autosize || this.type !== 'textarea') {
-      //     return false;
-      //   }
-      //
-      //   const minRows = autosize.minRows;
-      //   const maxRows = autosize.maxRows;
-      //
-      //   // this.textareaStyles = calcTextareaHeight(this.$refs.textarea, minRows, maxRows);
-      // },
+      resizeTextarea () {
+        const autosize = this.autosize;
+        if (!autosize || this.type !== 'textarea') {
+          return false;
+        }
+
+        const minRows = autosize.minRows;
+        const maxRows = autosize.maxRows;
+
+        this.textareaStyles = calcTextareaHeight(this.$refs.textarea, minRows, maxRows);
+      },
       focus () {
         if (this.type === 'textarea') {
           this.$refs.textarea.focus();
