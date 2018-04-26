@@ -2,7 +2,10 @@
 	<div style="background: #efefef; width:100%">
  	<div style="width:50%;padding:20px;background: #efefef;">
  	<div style="background:#fff;padding:20px;"> 
- 	  <sg-tree :list.sync='treeData'  :func="nodeClick" :contextmenu='contextmenuClick' :editnode="edit" :delnode="del"></sg-tree>
+    <p>基础用法：</p>
+     <sg-tree :treeData.sync='data'></sg-tree>
+    <p>事件绑定</p>
+     <sg-tree :treeData.sync='data' :nodeClick="nodeClick" :expand = "expandFun" :cxtmenu='contextmenuClick'></sg-tree>
 	</div>
   	</div> 
   	</div>
@@ -12,67 +15,37 @@
   export default {
     data() {
       return {
-        treeData:[{
-                id:1,
-                name:"音乐",
-                children:[],
-                url:"http://www.baidu.com"
-            },{
-              id:2,
-              name:"视频",
-              open:true,
-              children:[{
-             id:3,
-             name:"电影",
-             open:true,
-             children:[{
-                id:4,
-                name:"国产电影",
-                url:""
-             },{
-                id:5,
-                name:"好莱坞电影",
-                url:""
-             },{
-                id:6,
-                name:"小语种电影",
-                url:""
-             }]
-              },{
-               id:7,
-              name:"短片",
-              open:false,
-              children:[{
-                id:9,
-                name:"电视剧",
-                url:""
-             },{
-                id:10,
-                name:"短片",
-                url:""
-             }]
-          }]
-        }],
-        activeNames: ['1']
+        data:[{
+                title: 'parent 1',
+                expand: true,
+                children: [
+                            {
+                              title: 'parent 1-1',
+                              expand: true,
+                              children: [
+                                      { title: 'leaf 1-1-1'},
+                                      {title: 'leaf 1-1-2'}
+                                   ]
+                             },
+                            {
+                                title: 'parent 1-2',
+                                children: [
+                                    {title: 'leaf 1-2-1'},
+                                    {title: 'leaf 1-2-1'}
+                                ]
+                            }]
+                    }]
       };
     },
     methods: {
-      handleChange(val) {
-        console.log(val);
-      },
       nodeClick(m){
-        if(m.children.length == '0'){
-          console.log(m);
-        } 
+        console.log("节点点击回调:"+m)
+      },
+      expandFun(m){
+        console.log("展开收起回调:"+m)
       },
       contextmenuClick(m){
-        alert(m)
-      },
-      edit(m){
-        console.log(m)
-      },
-      del(m){
-        console.log(m)
+        console.log("右击事件回调:"+m)
       }
     }
   }
