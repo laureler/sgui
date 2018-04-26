@@ -1,7 +1,8 @@
 <template>
-    <div>
-      盖章<sg-signet></sg-signet>
-    </div>
+  <div>
+    盖章
+    <sg-signet></sg-signet>
+  </div>
 </template>
 <script>
   export default {}

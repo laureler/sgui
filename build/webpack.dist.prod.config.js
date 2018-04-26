@@ -39,7 +39,6 @@ module.exports = merge(webpackBaseConfig, {
     }),
     new CompressionPlugin({
       asset: '[path].gz[query]',
-
       algorithm: 'gzip',
       test: /\.(js|css)$/,
       threshold: 10240,

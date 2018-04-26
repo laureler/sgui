@@ -1,7 +1,8 @@
 <template>
-    <div>
-      评分<sg-rate ></sg-rate>
-    </div>
+  <div>
+    评分
+    <sg-rate></sg-rate>
+  </div>
 </template>
 <script>
   export default {}
