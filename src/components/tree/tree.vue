@@ -3,9 +3,8 @@
 		<ul>
 			<sg-treeitem v-for='(m,i) in sgTreeData' :key='i' :model.sync="m" :expandfun = 'expand' :nodeClickfun = 'nodeClick' :cxtmenufun='cxtmenu'  :trees.sync='sgTreeData'></sg-treeitem>
 		</ul>
-	</div>
+	</div>  
 </template>
-
 <script>
 	import Vue from 'vue'
 	export default{
