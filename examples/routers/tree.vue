@@ -4,7 +4,8 @@
  	<div style="background:#fff;padding:20px;"> 
     <p>基础用法：</p>
      <sg-tree :treeData.sync='data'></sg-tree>
-    <p>事件绑定</p>
+    <p>事件绑定:</p>
+    <p>(点击事件丶展开收起事件丶右击事件)</p>
      <sg-tree :treeData.sync='data' :nodeClick="nodeClick" :expand = "expandFun" :cxtmenu='contextmenuClick'></sg-tree>
 	</div>
   	</div> 
@@ -39,13 +40,16 @@
     },
     methods: {
       nodeClick(m){
-        console.log("节点点击回调:"+m)
+        console.log("节点点击回调:")
+        console.log(m)
       },
       expandFun(m){
-        console.log("展开收起回调:"+m)
+        console.log("展开收起回调:")
+        console.log(m)
       },
       contextmenuClick(m){
-        console.log("右击事件回调:"+m)
+        console.log("右击事件回调:")
+        console.log(m)
       }
     }
   }

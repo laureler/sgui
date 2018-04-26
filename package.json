@@ -10,7 +10,7 @@
     "dist:style": "gulp --gulpfile build/build-style.js",
     "dist:dev": "webpack --config build/webpack.dist.dev.config.js",
     "dist:prod": "webpack --config build/webpack.dist.prod.config.js",
-    "dist:example":"webpack --config build/webpack.dist.example.config.js",
+    "dist:example": "webpack --config build/webpack.dist.example.config.js",
     "dist": "npm run dist:style && npm run dist:dev && npm run dist:prod",
     "prepublish": "npm run dist"
   },
