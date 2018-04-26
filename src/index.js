@@ -1,9 +1,17 @@
 import SgInput from './components/input';
 import SgTree from './components/tree';
+import SgAvatar from './components/avatar';
+import SgBadge from './components/badge';
+import SgRate from './components/rate';
+import SgSignet from './components/signet';
 
 const components = {
   SgInput,
-  SgTree
+  SgTree,
+  SgAvatar,
+  SgBadge,
+  SgRate,
+  SgSignet
 };
 
 const sgui = {
