@@ -59,8 +59,7 @@
 				var recurrenceFun = (data) => {
 					data.forEach((m)=>{
 					 m.children = m.children || [];
-					 
-				 	 if(!m.hasOwnProperty("isOpen") ) {
+				 	 if(!m.hasOwnProperty("isOpen") ) { 
 	               			m.isOpen =  m.hasOwnProperty("expand") ? m.expand : this.isExpand;
 	               		}
 	               	 if(m.children.length == 0){
