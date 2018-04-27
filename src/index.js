@@ -4,6 +4,7 @@ import SgAvatar from './components/avatar';
 import SgBadge from './components/badge';
 import SgRate from './components/rate';
 import SgSignet from './components/signet';
+import SgIcon from './components/icon'
 
 const components = {
   SgInput,
@@ -11,7 +12,8 @@ const components = {
   SgAvatar,
   SgBadge,
   SgRate,
-  SgSignet
+  SgSignet,
+  SgIcon,
 };
 
 const sgui = {
