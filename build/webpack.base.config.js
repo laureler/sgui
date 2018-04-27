@@ -23,7 +23,7 @@ module.exports = {
               {
                 loader: 'css-loader',
                 options: {
-                  sourceMap: true,
+                  sourceMap: false,
                 },
               },
             ],
@@ -32,13 +32,13 @@ module.exports = {
               {
                 loader: 'css-loader',
                 options: {
-                  sourceMap: true,
+                  sourceMap: false,
                 },
               },
               {
                 loader: 'less-loader',
                 options: {
-                  sourceMap: true,
+                  sourceMap: false,
                 },
               },
             ],
@@ -46,14 +46,14 @@ module.exports = {
           postLoaders: {
             html: 'babel-loader?sourceMap'
           },
-          sourceMap: true,
+          sourceMap: false,
         }
       },
       {
         test: /\.js$/,
         loader: 'babel-loader',
         options: {
-          sourceMap: true,
+          sourceMap: false,
         },
         exclude: /node_modules/,
       },
@@ -63,13 +63,13 @@ module.exports = {
           {
             loader: 'style-loader',
             options: {
-              sourceMap: true,
+              sourceMap: false,
             },
           },
           {
             loader: 'css-loader',
             options: {
-              sourceMap: true,
+              sourceMap: false,
             },
           },
           {
@@ -83,19 +83,19 @@ module.exports = {
           {
             loader: 'style-loader',
             options: {
-              sourceMap: true,
+              sourceMap: false,
             },
           },
           {
             loader: 'css-loader',
             options: {
-              sourceMap: true,
+              sourceMap: false,
             },
           },
           {
             loader: 'less-loader',
             options: {
-              sourceMap: true,
+              sourceMap: false,
             },
           },
         ]
@@ -106,19 +106,19 @@ module.exports = {
           {
             loader: 'style-loader',
             options: {
-              sourceMap: true,
+              sourceMap: false,
             },
           },
           {
             loader: 'css-loader',
             options: {
-              sourceMap: true,
+              sourceMap: false,
             },
           },
           {
             loader: 'sass-loader',
             options: {
-              sourceMap: true,
+              sourceMap: false,
             },
           },
         ]
