@@ -14,9 +14,12 @@
   </div>
 </template>
 <script>
+  import Locale from '../../mixins/locale';
+  import Emitter from '../../mixins/emitter';
   const prefixCls = 'sg-rate';
   export default {
     name: 'Rate',
+    mixins: [ Locale, Emitter ],
     props: {
       count: {
         type: Number,
@@ -117,7 +120,7 @@
         this.currentValue = value;
         this.$emit('input', value);
         this.$emit('on-change', value);
-        //this.dispatch('FormItem', 'on-form-change', value);
+        this.dispatch('FormItem', 'on-form-change', value);
       }
     }
   };
