@@ -2,9 +2,35 @@
   <i-article>
     <article>
       <Anchor title="sg-signet" h1></Anchor>
-      <p class="bd-lead">印章组件，用来代表用户或事物，支持图片、图标或字符展示。</p>
+      <p class="bd-lead">印章组件</p>
       <Anchor title="代码示例" h2></Anchor>
-      <Demo title="基础用法"></Demo>
+      <Demo title="基础用法">
+        <div slot="demo">
+          <sg-signet></sg-signet>
+        </div>
+        <div slot="desc">
+          <p>基本用法,显示默认</p>
+        </div>
+        <i-code lang="html" slot="code">{{ code.base }}</i-code>
+      </Demo>
+      <Demo title="自定义宽高">
+        <div slot="demo">
+          <sg-signet :iWidth="100" :iHeight="100"></sg-signet>
+        </div>
+        <div slot="desc">
+          <p>自定义宽高</p>
+        </div>
+        <i-code lang="html" slot="code">{{ code.auto }}</i-code>
+      </Demo>
+      <Demo title="自定义内容">
+        <div slot="demo">
+          <sg-signet name="测试用印章" organization="北方数码科技有限公司"></sg-signet>
+        </div>
+        <div slot="desc">
+          <p>自定义印章名、单位名称</p>
+        </div>
+        <i-code lang="html" slot="code">{{ code.edit }}</i-code>
+      </Demo>
       <Anchor title="API" h2></Anchor>
       <Anchor title="props" h3></Anchor>
       <table>
@@ -18,59 +44,28 @@
         </thead>
         <tbody>
         <tr>
-          <td>type</td>
-          <td>输入框类型，可选值为 <code>text</code>、<code>password</code>、<code>textarea</code>、<code>url</code>、<code>email</code>、<code>date</code>
-          </td>
+          <td>iWidth</td>
+          <td>印章宽度</td>
+          <td>Number</td>
+          <td>150</td>
+        </tr>
+        <tr>
+          <td>iHeight</td>
+          <td>印章高度</td>
+          <td>Number</td>
+          <td>150</td>
+        </tr>
+        <tr>
+          <td>name</td>
+          <td>印章名</td>
           <td>String</td>
-          <td>text</td>
+          <td>测试专用章</td>
         </tr>
         <tr>
-          <td>value</td>
-          <td>绑定的值，可使用 v-model 双向绑定</td>
-          <td>String | Number</td>
-          <td>空</td>
-        </tr>
-        <tr>
-          <td>placeholder</td>
-          <td>占位文本</td>
-          <td>String</td>
-          <td>-</td>
-        </tr>
-        <tr>
-          <td>clearable</td>
-          <td>是否显示清空按钮</td>
+          <td>organization</td>
+          <td>印章单位名</td>
           <td>Boolean</td>
-          <td>true</td>
-        </tr>
-        <tr>
-          <td>disabled</td>
-          <td>设置输入框为禁用状态</td>
-          <td>Boolean</td>
-          <td>false</td>
-        </tr>
-        <tr>
-          <td>readonly</td>
-          <td>设置输入框为只读</td>
-          <td>Boolean</td>
-          <td>false</td>
-        </tr>
-        <tr>
-          <td>icon</td>
-          <td>输入框尾部图标，仅在 text 类型下有效</td>
-          <td>String</td>
-          <td>-</td>
-        </tr>
-        <tr>
-          <td>number</td>
-          <td>将用户的输入转换为 Number 类型</td>
-          <td>Boolean</td>
-          <td>false</td>
-        </tr>
-        <tr>
-          <td>autofocus</td>
-          <td>自动获取焦点</td>
-          <td>Boolean</td>
-          <td>false</td>
+          <td>南方数码研发中心团队</td>
         </tr>
         </tbody>
       </table>
@@ -81,7 +76,7 @@
   import iArticle from '../components/article'
   import iCode from '../components/code';
   import Demo from '../components/demo.vue';
-  import Code from '../code/input';
+  import Code from '../code/signet';
   import Anchor from '../components/anchor.vue';
   export default {
     components: {
