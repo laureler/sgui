@@ -6,6 +6,7 @@ import sgui from '../src/index';
 // 开启debug模式
 // Vue.config.debug = true;
 //
+import uiScript from '../src/script/uiScript'
 Vue.use(VueRouter);
 Vue.use(sgui)
 // 路由配置
@@ -44,6 +45,34 @@ const router = new VueRouter({
         {
           path: 'rate',
           component: (resolve) => require(['./routers/rate.vue'], resolve)
+        },
+        {
+            path: 'qrcode',
+            component: (resolve) => require(['./routers/qrcode.vue'], resolve)
+        },
+        {
+            path: 'magnifyGlass',
+            component: (resolve) => require(['./routers/magnifyGlass.vue'], resolve)
+        },
+        {
+            path: 'formatDate',
+            component: (resolve) => require(['./routers/formatDate.vue'], resolve)
+        },
+        {
+            path: 'numFormat',
+            component: (resolve) => require(['./routers/numFormat.vue'], resolve)
+        },
+        {
+            path: 'parseQueryString',
+            component: (resolve) => require(['./routers/parseQueryString.vue'], resolve)
+        },
+        {
+            path: 'trim',
+            component: (resolve) => require(['./routers/trim.vue'], resolve)
+        },
+        {
+            path: 'getBase64',
+            component: (resolve) => require(['./routers/getBase64.vue'], resolve)
         }
       ],
     },

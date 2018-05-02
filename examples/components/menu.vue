@@ -44,8 +44,8 @@
         </ul>
         <p class="list-title">基础组件 - 图表类</p>
         <ul class="list-menu">
-          <router-link to="/" tag="li"><a>二维码</a></router-link>
-          <router-link to="/" tag="li"><a>图片放大</a></router-link>
+          <router-link to="/qrcode" tag="li" class="ready"><a>二维码</a></router-link>
+          <router-link to="/magnifyGlass" tag="li" class="ready"><a>图片放大</a></router-link>
           <router-link to="/" tag="li"><a>图片缩略图</a></router-link>
           <router-link to="/" tag="li"><a>echart</a></router-link>
           <router-link to="/" tag="li"><a>表格</a></router-link>
@@ -81,11 +81,11 @@
         </ul>
         <p class="list-title">组件服务 - 工具库</p>
         <ul class="list-menu">
-          <router-link to="/" tag="li"><a>图片转base64</a></router-link>
-          <router-link to="/" tag="li"><a>日期格式化</a></router-link>
-          <router-link to="/" tag="li"><a>数字格式化</a></router-link>
-          <router-link to="/" tag="li"><a>url解析</a></router-link>
-          <router-link to="/" tag="li"><a>string处理（去除首尾空格）</a></router-link>
+          <router-link to="/getBase64" tag="li" class="ready"><a>图片转base64</a></router-link>
+          <router-link to="/formatDate" tag="li" class="ready"><a>日期格式化</a></router-link>
+          <router-link to="/numFormat" tag="li" class="ready"><a>数字格式化</a></router-link>
+          <router-link to="/parseQueryString" tag="li" class="ready"><a>url解析</a></router-link>
+          <router-link to="/trim" tag="li" class="ready"><a>string处理（去除首尾空格）</a></router-link>
           <router-link to="/" tag="li"><a>多语言（i18n）</a></router-link>
           <router-link to="/" tag="li"><a>可拖拽</a></router-link>
         </ul>
