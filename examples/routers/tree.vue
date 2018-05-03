@@ -10,7 +10,7 @@
          <sg-tree :treeData.sync='data'></sg-tree>
       </div>
       <div slot="desc" 
-        <p>>最简单的用法，默认展开功能，将数据绑定到 <code>treeData.sync</code>树宽度默认 100%。可自己设置宽度</p>
+        <p>>最简单的用法，默认展开功能，将数据绑定到 <code>treeData.sync</code>树宽度默认 100%。可自己设置宽度 </p>
       </div>
       <i-code lang="html" slot="code">{{ code.base }}</i-code>
     </Demo>
