@@ -680,8 +680,10 @@
                 target.style.position='relative';
             }
             
-            target.style.background="url("+opt.img+") no-repeat";
+            target.style.backgroundImage=opt.img;
             target.style.backgroundSize="100%";
+            target.style.backgroundRepeat="no-repeat";
+       
             //滤镜
             function Glass(target,opt){
                 var gls=document.createElement('div');
@@ -755,7 +757,7 @@
                 showPlace.style.left=position.left+target.clientWidth+5+'px';
                 showPlace.style.top=position.top+'px';
                 showPlace.style.border="1px solid #ddd";
-                showPlace.style.backgroundImage="url("+opt.img+")";
+                showPlace.style.backgroundImage=opt.img;
                 showPlace.style.backgroundPosition="0px 0px";
                 showPlace.style.backgroundRepeat="no-repeat";
                 showPlace.style.backgroundSize=opt.mulriple*target.clientWidth+'px';

@@ -1,18 +1,29 @@
 <template>
     <span :class="classes">
         <img :src="src" v-if="src">
+        <sg-icon :type="icon" v-else-if="icon"></sg-icon>
         <span ref="children" :class="[prefixCls + '-string']" :style="childrenStyle" v-else><slot></slot></span>
     </span>
 </template>
 <script>
+  import sgIcon from '../icon';
+  import { oneOf } from '../../utils/assist';
+
   const prefixCls = 'sg-avatar';
   export default {
     name: 'Avatar',
+    components: { sgIcon },
     props: {
       shape: {
+        validator (value) {
+          return oneOf(value, ['circle', 'square']);
+        },
         default: 'circle'
       },
       size: {
+        validator (value) {
+          return oneOf(value, ['small', 'large', 'default']);
+        },
         default: 'default'
       },
       src: {
@@ -81,5 +92,3 @@
     }
   };
 </script>
-
-

@@ -4,8 +4,8 @@
         <sup :class="dotClasses" v-show="badge"></sup>
     </span>
   <span v-else :class="classes" ref="badge">
-          <slot></slot>
-          <sup v-if="count" :class="countClasses" v-show="badge">{{ finalCount }}</sup>
+        <slot></slot>
+        <sup v-if="count" :class="countClasses" v-show="badge">{{ finalCount }}</sup>
     </span>
 </template>
 <script>
