@@ -5,6 +5,7 @@ import SgBadge from './components/badge';
 import SgRate from './components/rate';
 import SgSignet from './components/signet';
 import SgIcon from './components/icon'
+import SgQrcode from './components/qrcode'
 
 const components = {
   SgInput,
@@ -14,6 +15,7 @@ const components = {
   SgRate,
   SgSignet,
   SgIcon,
+  SgQrcode
 };
 
 const sgui = {

@@ -197,7 +197,6 @@
   import Demo from '../components/demo.vue';
   import Code from '../code/input';
   import Anchor from '../components/anchor.vue';
-
   export default {
     components: {
       iCode,
