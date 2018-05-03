@@ -38,7 +38,7 @@
           <router-link to="/" tag="li"><a>步骤条</a></router-link>
           <router-link to="/" tag="li"><a>面包屑</a></router-link>
           <router-link to="/" tag="li"><a>步骤条（时间轴）</a></router-link>
-          <router-link to="/" tag="li"><a>tab切换</a></router-link>
+          <router-link to="/tab" tag="li" class="ready"><a>tab切换</a></router-link>
           <router-link to="/" tag="li"><a>粘性头部</a></router-link>
           <router-link to="/" tag="li"><a>折叠面板</a></router-link>
         </ul>
