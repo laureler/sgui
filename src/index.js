@@ -16,6 +16,7 @@ import { ElTable } from 'element-table'
 import { ElTableColumn } from 'element-table'
 import SgSpin from './components/spin';
 import SgModal from './components/modal';
+import SgPreview from './components/preview';
 
 
 const components = {
@@ -42,6 +43,7 @@ const components = {
   SgRadioGroup: SgRadio.Group,
   SgSpin,
   SgModal
+  SgPreview,
 };
 
 const sgui = {

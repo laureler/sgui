@@ -9,12 +9,12 @@
       <div slot="demo">
          <sg-tree :treeData.sync='data'></sg-tree>
       </div>
-      <div slot="desc"
-        <p>>最简单的用法，默认展开功能，将数据绑定到 <code>treeData.sync</code>树宽度默认 100%。可自己设置宽度</p>
+      <div slot="desc" 
+        <p>>最简单的用法，默认展开功能，将数据绑定到 <code>treeData.sync</code>树宽度默认 100%。可自己设置宽度 </p>
       </div>
       <i-code lang="html" slot="code">{{ code.base }}</i-code>
     </Demo>
-    <Demo title="事件绑定案例">
+    <Demo title="基础操作回调事件绑定">
       <div slot="demo">
         <sg-tree :treeData.sync='data' :nodeClick="nodeClick" :expand = "expandFun" :cxtmenu='contextmenuClick'></sg-tree>
       </div>
@@ -25,11 +25,17 @@
       </div>
       <i-code lang="html" slot="code">{{ code.callback }}</i-code>
     </Demo>
+    <Demo title="可编辑的树节点">
+      <div slot="demo">
+        <sg-tree :treeData.sync='data' :nodeClick="nodeClick" :expand = "expandFun" :cxtmenu='contextmenuClick' :isEdit='true' :editnode='editnode' :delnode='beforedel'></sg-tree>
+      </div>
+      
+    </Demo>
 
-
+     
     <Anchor title="API" h2></Anchor>
     <Anchor title="props" h3></Anchor>
-    <table class="doc-table">
+    <table>
       <thead>
       <tr>
         <th>属性</th>
@@ -46,11 +52,11 @@
         <td>Array</td>
         <td>[ ]</td>
       </tr>
-
+     
       </tbody>
     </table>
     <Anchor title="events" h3></Anchor>
-    <table class="doc-table">
+    <table>
       <thead>
       <tr>
         <th>事件名</th>
@@ -74,11 +80,11 @@
         <td>鼠标右击触发</td>
         <td>无</td>
       </tr>
-
+      
       </tbody>
     </table>
    <Anchor title="children" h3></Anchor>
-    <table class="doc-table">
+    <table>
       <thead>
       <tr>
         <th>属性</th>
@@ -100,9 +106,11 @@
         <td>Boolean</td>
         <td>false</td>
       </tr>
+      
+      
       </tbody>
     </table>
-
+   
   </article>
   </i-article>
 
@@ -139,8 +147,8 @@
                             {
                                 title: 'parent 1-2',
                                 children: [
-                                    {title: 'leaf 1-2-1'},
-                                    {title: 'leaf 1-2-1'}
+                                    {title: 'leaf 1-2-1-1'},
+                                    {title: 'leaf 1-2-1-2'}
                                 ]
                             }]
                     }]
@@ -157,6 +165,14 @@
       },
       contextmenuClick(m){
         console.log("右击事件回调:")
+        console.log(m)
+      },
+      editnode(m){
+         console.log("修改节点成功:")
+         console.log(m)
+      },
+      beforedel(m){
+        console.log("删除回调:")
         console.log(m)
       }
     }
