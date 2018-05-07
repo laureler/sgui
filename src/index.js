@@ -12,6 +12,11 @@ import SgCollapse from './components/collapse';
 import SgButton from './components/button';
 import SgCheckbox from './components/checkbox';
 import SgRadio from './components/radio';
+import { ElTable } from 'element-table'
+import { ElTableColumn } from 'element-table'
+import SgSpin from './components/spin';
+import SgModal from './components/modal';
+
 
 const components = {
   SgInput,
@@ -35,6 +40,8 @@ const components = {
   SgCheckboxGroup: SgCheckbox.Group,
   SgRadio,
   SgRadioGroup: SgRadio.Group,
+  SgSpin,
+  SgModal
 };
 
 const sgui = {
@@ -47,6 +54,10 @@ const install = function(Vue, opts = {}) {
   Object.keys(sgui).forEach(key => {
     Vue.component(key, sgui[key]);
   });
+  Vue.component('sg-table', ElTable)
+  Vue.component('sg-table-column', ElTableColumn)
+  Vue.prototype.$SgModal = SgModal;
+  Vue.prototype.$SgSpin = SgSpin;
 
 };
 

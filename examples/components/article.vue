@@ -46,7 +46,7 @@
 </script>
 <style lang="less">
   .bg-content{
-    table{
+    table.doc-table{
       thead,tbody,tfoot{
         tr{
           th,td{

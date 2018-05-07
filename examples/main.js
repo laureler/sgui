@@ -81,6 +81,10 @@ const router = new VueRouter({
         {
           path: 'configForm',
           component: (resolve) => require(['./routers/configForm.vue'], resolve)
+        },
+        {
+          path: 'queryTable',
+          component: (resolve) => require(['./routers/queryTable.vue'], resolve)
         }
       ],
     },

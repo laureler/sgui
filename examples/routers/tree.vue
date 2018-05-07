@@ -9,7 +9,7 @@
       <div slot="demo">
          <sg-tree :treeData.sync='data'></sg-tree>
       </div>
-      <div slot="desc" 
+      <div slot="desc"
         <p>>最简单的用法，默认展开功能，将数据绑定到 <code>treeData.sync</code>树宽度默认 100%。可自己设置宽度</p>
       </div>
       <i-code lang="html" slot="code">{{ code.base }}</i-code>
@@ -25,11 +25,11 @@
       </div>
       <i-code lang="html" slot="code">{{ code.callback }}</i-code>
     </Demo>
-     
-     
+
+
     <Anchor title="API" h2></Anchor>
     <Anchor title="props" h3></Anchor>
-    <table>
+    <table class="doc-table">
       <thead>
       <tr>
         <th>属性</th>
@@ -46,11 +46,11 @@
         <td>Array</td>
         <td>[ ]</td>
       </tr>
-     
+
       </tbody>
     </table>
     <Anchor title="events" h3></Anchor>
-    <table>
+    <table class="doc-table">
       <thead>
       <tr>
         <th>事件名</th>
@@ -74,11 +74,11 @@
         <td>鼠标右击触发</td>
         <td>无</td>
       </tr>
-      
+
       </tbody>
     </table>
    <Anchor title="children" h3></Anchor>
-    <table>
+    <table class="doc-table">
       <thead>
       <tr>
         <th>属性</th>
@@ -100,11 +100,9 @@
         <td>Boolean</td>
         <td>false</td>
       </tr>
-      
-      
       </tbody>
     </table>
-   
+
   </article>
   </i-article>
 

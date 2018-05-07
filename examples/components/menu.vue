@@ -3,6 +3,12 @@
     <nav class="collapse bd-links" style="max-height: calc(100vh - 4rem)">
       <router-link to="/test" tag="a">开发须知</router-link>
       <div class="module-list">
+        <p class="list-title">业务组件</p>
+        <ul class="list-menu">
+          <router-link to="/business" tag="li" class="ready"><a>测试组件</a></router-link>
+          <router-link to="/configForm" tag="li" class="ready"><a>表单配置</a></router-link>
+          <router-link to="/queryTable" tag="li" class="ready"><a>表格查询</a></router-link>
+        </ul>
         <p class="list-title">基础组件 - 数据输入</p>
         <ul class="list-menu">
           <router-link to="/input" tag="li" class="ready"><a>input、textare、搜索输入框</a></router-link>
@@ -96,11 +102,6 @@
 
       </div>
       <div class="module-list">
-        <p class="list-title">业务组件</p>
-        <ul class="list-menu">
-          <router-link to="/business" tag="li" class="ready"><a>测试组件</a></router-link>
-          <router-link to="/configForm" tag="li" class="ready"><a>表单配置</a></router-link>
-        </ul>
         <p class="list-title">uiScript</p>
         <ul class="list-menu">
           <router-link to="/" tag="li"><a>uiScript使用文档</a></router-link>
