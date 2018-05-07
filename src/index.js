@@ -6,7 +6,13 @@ import SgRate from './components/rate';
 import SgSignet from './components/signet';
 import SgIcon from './components/icon'
 import SgQrcode from './components/qrcode'
-import SgPreview from './components/preview'
+import SgForm from './components/form'
+import {SgSelect, Option, OptionGroup} from './components/select';
+import SgCollapse from './components/collapse';
+import SgButton from './components/button';
+import SgCheckbox from './components/checkbox';
+import SgRadio from './components/radio';
+import SgPreview from './components/preview';
 
 const components = {
   SgInput,
@@ -17,7 +23,20 @@ const components = {
   SgSignet,
   SgIcon,
   SgQrcode,
-  SgPreview
+  SgForm,
+  SgFormItem: SgForm.Item,
+  Option: Option,
+  OptionGroup,
+  SgSelect,
+  SgCollapse,
+  SgPanel: SgCollapse.Panel,
+  SgButton,
+  SgButtonGroup: SgButton.Group,
+  SgCheckbox,
+  SgCheckboxGroup: SgCheckbox.Group,
+  SgRadio,
+  SgRadioGroup: SgRadio.Group,
+  SgPreview,
 };
 
 const sgui = {

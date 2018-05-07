@@ -75,8 +75,16 @@ const router = new VueRouter({
             component: (resolve) => require(['./routers/getBase64.vue'], resolve)
         },
         {
-            path: 'preview',
-            component: (resolve) => require(['./routers/preview.vue'], resolve)
+          path: 'business',
+          component: (resolve) => require(['./routers/business.vue'], resolve)
+        },
+        {
+          path: 'configForm',
+          component: (resolve) => require(['./routers/configForm.vue'], resolve)
+        },
+        {
+          path: 'preview',
+          component: (resolve) => require(['./routers/preview.vue'], resolve)
         }
       ],
     },

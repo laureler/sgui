@@ -82,7 +82,8 @@
     "webpack-dev-server": "^2.11.1",
     "webpack-merge": "^3.0.0",
     "clipboard": "^1.7.1",
-    "highlightjs": "^8.7.0"
+    "highlightjs": "^8.7.0",
+    "async-validator": "^1.8.2"
   },
   "engines": {
     "node": ">= 6.0.0",
