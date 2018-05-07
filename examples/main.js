@@ -73,6 +73,10 @@ const router = new VueRouter({
         {
             path: 'getBase64',
             component: (resolve) => require(['./routers/getBase64.vue'], resolve)
+        },
+        {
+            path: 'preview',
+            component: (resolve) => require(['./routers/preview.vue'], resolve)
         }
       ],
     },
