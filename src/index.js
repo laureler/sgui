@@ -42,7 +42,7 @@ const components = {
   SgRadio,
   SgRadioGroup: SgRadio.Group,
   SgSpin,
-  SgModal
+  SgModal,
   SgPreview,
 };
 
