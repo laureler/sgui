@@ -23,14 +23,15 @@
         </ul>
         <p class="list-title">基础组件 - 表单控件</p>
         <ul class="list-menu">
-          <router-link to="/" tag="li"><a>单选框</a></router-link>
-          <router-link to="/" tag="li"><a>多选框</a></router-link>
+          <router-link to="/" tag="li" class="ready"><a>单选框</a></router-link>
+          <router-link to="/" tag="li" class="ready"><a>多选框</a></router-link>
           <router-link to="/" tag="li"><a>数字步增</a></router-link>
-          <router-link to="/" tag="li"><a>select选择</a></router-link>
+          <router-link to="/" tag="li" class="ready"><a>select选择</a></router-link>
           <router-link to="/" tag="li"><a>滑块条</a></router-link>
           <router-link to="/" tag="li"><a>穿梭框</a></router-link>
-          <router-link to="/" tag="li"><a>按钮</a></router-link>
+          <router-link to="/" tag="li" class="ready"><a>按钮</a></router-link>
           <router-link to="/" tag="li"><a>进度条</a></router-link>
+          <router-link to="/" tag="li" class="ready"><a>表单控件</a></router-link>
         </ul>
       </div>
       <div class="module-list">
