@@ -5,7 +5,7 @@
     </div>
 </template>
 <script>
-import PDFObject from "./pdf/pdfobject.js" 
+import PDFObject from "./pdf/pdfobject.js"   
     export default{
         data(){
             return{
