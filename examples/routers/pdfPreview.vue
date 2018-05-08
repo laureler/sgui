@@ -5,7 +5,7 @@
     <p class="bd-lead">PDF文件预览</p>
     <Anchor title="代码示例" h2></Anchor>
     <Demo title="基础用法">
-      <div slot="demo" style="height:500px"> 
+      <div slot="demo" style="height:500px">  
           <sg-pdf :pdfSrc="src"></sg-pdf> 
       </div>
       <div slot="desc" 
