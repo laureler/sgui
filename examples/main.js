@@ -85,6 +85,10 @@ const router = new VueRouter({
         {
           path: 'preview',
           component: (resolve) => require(['./routers/preview.vue'], resolve)
+        },
+        {
+          path: 'pdfPreview',
+          component: (resolve) => require(['./routers/pdfPreview.vue'], resolve)
         }
       ],
     },

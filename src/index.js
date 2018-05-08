@@ -13,6 +13,7 @@ import SgButton from './components/button';
 import SgCheckbox from './components/checkbox';
 import SgRadio from './components/radio';
 import SgPreview from './components/preview';
+import SgPdf from './components/pdfPreview';
 
 const components = {
   SgInput,
@@ -37,6 +38,7 @@ const components = {
   SgRadio,
   SgRadioGroup: SgRadio.Group,
   SgPreview,
+  SgPdf,
 };
 
 const sgui = {
