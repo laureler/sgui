@@ -21,6 +21,9 @@ export default {
         label:{
             type:String,
             default:''
+        },
+        textData: {
+            type:Array,
         }
     },
     methods:{
@@ -32,13 +35,13 @@ export default {
     },
     //监听label
     watch:{
-        label(){
+        textData(){
             this.updateNav();
         }
     },
     
     mounted(){
-		//初始化tabs
+        //初始化tabs
         this.updateNav();
     }
 }
