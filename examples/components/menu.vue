@@ -17,6 +17,7 @@
           <router-link to="/" tag="li"><a>选择输入-人员、地区选择</a></router-link>
           <router-link to="/" tag="li"><a>文件操作-文件上传</a></router-link>
           <router-link to="/preview" tag="li" class="ready"><a>图片预览</a></router-link> 
+          <router-link to="/pdfPreview" tag="li" class=" "><a>PDF预览</a></router-link> 
         </ul>
         <p class="list-title">基础组件 - 列表</p>
         <ul class="list-menu">

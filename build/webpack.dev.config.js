@@ -9,7 +9,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const merge = require('webpack-merge');
 const webpackBaseConfig = require('./webpack.base.config.js');
 const FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin');
-
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = merge(webpackBaseConfig, {
   devtool: 'eval-source-map',
@@ -41,6 +41,13 @@ module.exports = merge(webpackBaseConfig, {
       filename: path.join(__dirname, '../examples/dist/index.html'),
       template: path.join(__dirname, '../examples/index.html')
     }),
+    new CopyWebpackPlugin([
+      {
+        from: path.resolve(__dirname, '../static'),
+        to:  '../dist/static'
+      }
+    ]),
+
     new FriendlyErrorsPlugin()
   ]
 });

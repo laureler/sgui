@@ -17,6 +17,7 @@ import { ElTableColumn } from 'element-table'
 import SgSpin from './components/spin';
 import SgModal from './components/modal';
 import SgPreview from './components/preview';
+import SgPdf from './components/pdfPreview';
 
 
 const components = {
@@ -44,6 +45,7 @@ const components = {
   SgSpin,
   SgModal,
   SgPreview,
+  SgPdf,
 };
 
 const sgui = {
