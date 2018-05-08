@@ -48,7 +48,7 @@
     </Demo>
     <Anchor title="API" h2></Anchor>
     <Anchor title="props" h3></Anchor>
-    <table>
+    <table class="doc-table">
       <thead>
       <tr>
         <th>属性</th>
@@ -116,7 +116,7 @@
       </tbody>
     </table>
     <Anchor title="events" h3></Anchor>
-    <table>
+    <table class="doc-table">
       <thead>
       <tr>
         <th>事件名</th>
@@ -153,7 +153,7 @@
       </tbody>
     </table>
     <Anchor title="slot" h3></Anchor>
-    <table>
+    <table class="doc-table">
       <thead>
       <tr>
         <th>名称</th>
@@ -172,7 +172,7 @@
       </tbody>
     </table>
     <Anchor title="methods" h3></Anchor>
-    <table>
+    <table class="doc-table">
       <thead>
       <tr>
         <th>方法名</th>
