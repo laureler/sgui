@@ -8,6 +8,19 @@ import SgIcon from './components/icon'
 import SgQrcode from './components/qrcode'
 import SgTabs from './components/tabs';
 import SgPane from './components/pane';
+import SgForm from './components/form'
+import {SgSelect, Option, OptionGroup} from './components/select';
+import SgCollapse from './components/collapse';
+import SgButton from './components/button';
+import SgCheckbox from './components/checkbox';
+import SgRadio from './components/radio';
+import { ElTable } from 'element-table'
+import { ElTableColumn } from 'element-table'
+import SgSpin from './components/spin';
+import SgModal from './components/modal';
+import SgPreview from './components/preview';
+import SgPdf from './components/pdfPreview';
+
 
 const components = {
   SgInput,
@@ -19,7 +32,24 @@ const components = {
   SgIcon,
   SgQrcode,
   SgTabs,
-  SgPane
+  SgPane,
+  SgForm,
+  SgFormItem: SgForm.Item,
+  Option: Option,
+  OptionGroup,
+  SgSelect,
+  SgCollapse,
+  SgPanel: SgCollapse.Panel,
+  SgButton,
+  SgButtonGroup: SgButton.Group,
+  SgCheckbox,
+  SgCheckboxGroup: SgCheckbox.Group,
+  SgRadio,
+  SgRadioGroup: SgRadio.Group,
+  SgSpin,
+  SgModal,
+  SgPreview,
+  SgPdf,
 };
 
 const sgui = {
@@ -32,6 +62,10 @@ const install = function(Vue, opts = {}) {
   Object.keys(sgui).forEach(key => {
     Vue.component(key, sgui[key]);
   });
+  Vue.component('sg-table', ElTable)
+  Vue.component('sg-table-column', ElTableColumn)
+  Vue.prototype.$SgModal = SgModal;
+  Vue.prototype.$SgSpin = SgSpin;
 
 };
 

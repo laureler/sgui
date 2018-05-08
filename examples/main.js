@@ -77,6 +77,26 @@ const router = new VueRouter({
         {
             path: 'getBase64',
             component: (resolve) => require(['./routers/getBase64.vue'], resolve)
+        },
+        {
+          path: 'business',
+          component: (resolve) => require(['./routers/business.vue'], resolve)
+        },
+        {
+          path: 'configForm',
+          component: (resolve) => require(['./routers/configForm.vue'], resolve)
+        },
+        {
+          path: 'queryTable',
+          component: (resolve) => require(['./routers/queryTable.vue'], resolve)
+        },
+        {
+          path: 'preview',
+          component: (resolve) => require(['./routers/preview.vue'], resolve)
+        },
+        {
+          path: 'pdfPreview',
+          component: (resolve) => require(['./routers/pdfPreview.vue'], resolve)
         }
       ],
     },

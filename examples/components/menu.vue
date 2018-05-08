@@ -3,6 +3,12 @@
     <nav class="collapse bd-links" style="max-height: calc(100vh - 4rem)">
       <router-link to="/test" tag="a">开发须知</router-link>
       <div class="module-list">
+        <p class="list-title">业务组件</p>
+        <ul class="list-menu">
+          <router-link to="/business" tag="li" class="ready"><a>测试组件</a></router-link>
+          <router-link to="/configForm" tag="li" class="ready"><a>表单配置</a></router-link>
+          <router-link to="/queryTable" tag="li" class="ready"><a>表格查询</a></router-link>
+        </ul>
         <p class="list-title">基础组件 - 数据输入</p>
         <ul class="list-menu">
           <router-link to="/input" tag="li" class="ready"><a>input、textare、搜索输入框</a></router-link>
@@ -10,7 +16,8 @@
           <router-link to="/" tag="li"><a>选择输入-时间、日期选择</a></router-link>
           <router-link to="/" tag="li"><a>选择输入-人员、地区选择</a></router-link>
           <router-link to="/" tag="li"><a>文件操作-文件上传</a></router-link>
-          <router-link to="/" tag="li"><a>文件操作-常用文件预览、下载</a></router-link>
+          <router-link to="/preview" tag="li" class="ready"><a>图片预览</a></router-link> 
+          <router-link to="/pdfPreview" tag="li" class=" "><a>PDF预览</a></router-link> 
         </ul>
         <p class="list-title">基础组件 - 列表</p>
         <ul class="list-menu">
@@ -23,12 +30,15 @@
         </ul>
         <p class="list-title">基础组件 - 表单控件</p>
         <ul class="list-menu">
-          <router-link to="/" tag="li"><a>单选框</a></router-link>
-          <router-link to="/" tag="li"><a>多选框</a></router-link>
+          <router-link to="/" tag="li" class="ready"><a>单选框</a></router-link>
+          <router-link to="/" tag="li" class="ready"><a>多选框</a></router-link>
           <router-link to="/" tag="li"><a>数字步增</a></router-link>
-          <router-link to="/" tag="li"><a>select选择</a></router-link>
+          <router-link to="/" tag="li" class="ready"><a>select选择</a></router-link>
           <router-link to="/" tag="li"><a>滑块条</a></router-link>
           <router-link to="/" tag="li"><a>穿梭框</a></router-link>
+          <router-link to="/" tag="li" class="ready"><a>按钮</a></router-link>
+          <router-link to="/" tag="li"><a>进度条</a></router-link>
+          <router-link to="/" tag="li" class="ready"><a>表单控件</a></router-link>
         </ul>
       </div>
       <div class="module-list">
@@ -47,6 +57,7 @@
           <router-link to="/qrcode" tag="li" class="ready"><a>二维码</a></router-link>
           <router-link to="/magnifyGlass" tag="li" class="ready"><a>图片放大</a></router-link>
           <router-link to="/" tag="li"><a>图片缩略图</a></router-link>
+          <router-link to="/" tag="li"><a>轮播图</a></router-link>
           <router-link to="/" tag="li"><a>echart</a></router-link>
           <router-link to="/" tag="li"><a>表格</a></router-link>
           <router-link to="/tree" tag="li" class="ready"><a>树控件</a></router-link>
@@ -92,10 +103,6 @@
 
       </div>
       <div class="module-list">
-        <p class="list-title">业务组件</p>
-        <ul class="list-menu">
-          <router-link to="/" tag="li"><a>待定</a></router-link>
-        </ul>
         <p class="list-title">uiScript</p>
         <ul class="list-menu">
           <router-link to="/" tag="li"><a>uiScript使用文档</a></router-link>

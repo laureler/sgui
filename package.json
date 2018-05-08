@@ -21,7 +21,8 @@
     "js-calendar": "^1.2.3",
     "lodash.throttle": "^4.1.1",
     "popper.js": "^1.14.1",
-    "tinycolor2": "^1.4.1"
+    "tinycolor2": "^1.4.1",
+    "element-table": "2.2.2"
   },
   "devDependencies": {
     "autoprefixer-loader": "^3.2.0",
@@ -82,7 +83,10 @@
     "webpack-dev-server": "^2.11.1",
     "webpack-merge": "^3.0.0",
     "clipboard": "^1.7.1",
-    "highlightjs": "^8.7.0"
+    "highlightjs": "^8.7.0",
+    "async-validator": "^1.8.2",
+    "copy-webpack-plugin": "^4.0.1",
+    "babel-polyfill": "^6.26.0"
   },
   "engines": {
     "node": ">= 6.0.0",

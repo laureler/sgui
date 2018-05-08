@@ -160,4 +160,90 @@ code.addon = `
 </script>
 `;
 
+code.bs = `<sg-identity :data="test" class="test-components">
+              <template slot-scope="props">
+                <sg-form inline :label-width="120">
+                  <sg-form-item label="权利人姓名">
+                    <sg-input v-model="props.row.name"></sg-input>
+                  </sg-form-item>
+                  <sg-form-item label="证件类型">
+                    <sg-select value="身份证">
+                      <Option value="身份证"></Option>
+                      <Option value="军官证"></Option>
+                    </sg-select>
+                  </sg-form-item>
+                  <sg-form-item label="证件号码" class="import">
+                    <sg-input v-model="props.row.number"></sg-input>
+                  </sg-form-item>
+                  <sg-form-item label="产权来源">
+                    <sg-select value="无偿移交" disabled>
+                      <Option value="无偿移交"></Option>
+                      <Option value="有偿移交"></Option>
+                    </sg-select>
+                  </sg-form-item>
+                  <sg-form-item label="权利人性质">
+                    <sg-select value="企业">
+                      <Option value="企业"></Option>
+                      <Option value="个人"></Option>
+                    </sg-select>
+                  </sg-form-item>
+                  <sg-form-item label="占有份额">
+                    <sg-input v-model="props.row.name"></sg-input>
+                  </sg-form-item>
+                  <sg-form-item label="权利面积">
+                    <sg-input v-model="props.row.name"></sg-input>
+                  </sg-form-item>
+                  <sg-form-item label="权利面积">
+                    <sg-input v-model="props.row.name"></sg-input>
+                  </sg-form-item>
+                  <sg-form-item label="联系人电话">
+                    <sg-input v-model="props.row.name"></sg-input>
+                  </sg-form-item>
+                  <sg-form-item label="是否持证人">
+                    <sg-select value="是">
+                      <Option value="是"></Option>
+                      <Option value="否"></Option>
+                    </sg-select>
+                  </sg-form-item>
+                  <sg-form-item label="法人代表">
+                    <sg-input v-model="props.row.name" disabled></sg-input>
+                  </sg-form-item>
+                  <sg-form-item label="法人证件类型">
+                    <sg-select value="身份证">
+                      <Option value="身份证"></Option>
+                      <Option value="军官证"></Option>
+                    </sg-select>
+                  </sg-form-item>
+                  <sg-form-item label="法人证件号码">
+                    <sg-input v-model="props.row.name"></sg-input>
+                  </sg-form-item>
+                  <sg-form-item label="权利号码">
+                    <sg-input v-model="props.row.name"></sg-input>
+                  </sg-form-item>
+                  <sg-form-item label="证书编号">
+                    <sg-input v-model="props.row.name"></sg-input>
+                  </sg-form-item>
+                  <sg-form-item label="代理人">
+                    <sg-input v-model="props.row.name"></sg-input>
+                  </sg-form-item>
+                  <sg-form-item label="代理人证件类型">
+                    <sg-select value="组织机构代理">
+                      <Option value="组织机构代理"></Option>
+                    </sg-select>
+                  </sg-form-item>
+                  <sg-form-item label="代理人证件号码">
+                    <sg-input v-model="props.row.name"></sg-input>
+                  </sg-form-item>
+                  <sg-form-item label="代理人联系电话">
+                    <sg-input v-model="props.row.name"></sg-input>
+                  </sg-form-item>
+                  <sg-form-item label="备注">
+                    <sg-input v-model="props.row.name"></sg-input>
+                  </sg-form-item>
+                  <sg-form-item label="">
+                  </sg-form-item>
+                </sg-form>
+              </template>
+            </sg-identity>`
+
 export default code;
