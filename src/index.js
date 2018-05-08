@@ -6,6 +6,8 @@ import SgRate from './components/rate';
 import SgSignet from './components/signet';
 import SgIcon from './components/icon'
 import SgQrcode from './components/qrcode'
+import SgTabs from './components/tabs';
+import SgPane from './components/pane';
 import SgForm from './components/form'
 import {SgSelect, Option, OptionGroup} from './components/select';
 import SgCollapse from './components/collapse';
@@ -29,6 +31,8 @@ const components = {
   SgSignet,
   SgIcon,
   SgQrcode,
+  SgTabs,
+  SgPane,
   SgForm,
   SgFormItem: SgForm.Item,
   Option: Option,
