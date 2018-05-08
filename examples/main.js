@@ -34,6 +34,10 @@ const router = new VueRouter({
           component: (resolve) => require(['./routers/tree.vue'], resolve)
         },
         {
+          path: 'tab',
+          component: (resolve) => require(['./routers/tab.vue'], resolve)
+        },
+        {
           path: 'avatar',
           component: (resolve) => require(['./routers/avatar.vue'], resolve)
         },
