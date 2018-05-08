@@ -13,14 +13,9 @@
       </div>
       <i-code lang="html" slot="code">{{ code.base }}</i-code>
     </Demo>
-    
-    
-
-     
-     
     <Anchor title="API" h2></Anchor>
     <Anchor title="props" h3></Anchor>
-    <table>
+    <table class="doc-table">
       <thead>
       <tr>
         <th>属性</th>
