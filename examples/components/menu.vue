@@ -16,8 +16,8 @@
           <router-link to="/" tag="li"><a>选择输入-时间、日期选择</a></router-link>
           <router-link to="/" tag="li"><a>选择输入-人员、地区选择</a></router-link>
           <router-link to="/" tag="li"><a>文件操作-文件上传</a></router-link>
-          <router-link to="/preview" tag="li" class="ready"><a>图片预览</a></router-link> 
-          <router-link to="/pdfPreview" tag="li" class=" "><a>PDF预览</a></router-link> 
+          <router-link to="/preview" tag="li" class="ready"><a>图片预览</a></router-link>
+          <router-link to="/pdfPreview" tag="li" class=" "><a>PDF预览</a></router-link>
         </ul>
         <p class="list-title">基础组件 - 列表</p>
         <ul class="list-menu">
@@ -30,13 +30,13 @@
         </ul>
         <p class="list-title">基础组件 - 表单控件</p>
         <ul class="list-menu">
-          <router-link to="/" tag="li" class="ready"><a>单选框</a></router-link>
-          <router-link to="/" tag="li" class="ready"><a>多选框</a></router-link>
+          <router-link to="/radio" tag="li" class="ready"><a>单选框</a></router-link>
+          <router-link to="/checkbox" tag="li" class="ready"><a>多选框</a></router-link>
           <router-link to="/" tag="li"><a>数字步增</a></router-link>
-          <router-link to="/" tag="li" class="ready"><a>select选择</a></router-link>
+          <router-link to="/select" tag="li" class="ready"><a>select选择</a></router-link>
           <router-link to="/" tag="li"><a>滑块条</a></router-link>
           <router-link to="/" tag="li"><a>穿梭框</a></router-link>
-          <router-link to="/" tag="li" class="ready"><a>按钮</a></router-link>
+          <router-link to="/button" tag="li" class="ready"><a>按钮</a></router-link>
           <router-link to="/" tag="li"><a>进度条</a></router-link>
           <router-link to="/" tag="li" class="ready"><a>表单控件</a></router-link>
         </ul>

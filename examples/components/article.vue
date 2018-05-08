@@ -46,7 +46,9 @@
 </script>
 <style lang="less">
   .bg-content{
-    table.doc-table{
+    padding-top: 25px;
+    padding-bottom: 50px;
+    table:not(.el-table__header):not(.el-table__body):not(.el-table__footer){
       thead,tbody,tfoot{
         tr{
           th,td{

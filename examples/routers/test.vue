@@ -55,9 +55,6 @@
     },
     components: {
       iArticle, iCode, Demo, Anchor
-    },
-    mounted() {
-      console.log(this.code)
     }
   }
 </script>
