@@ -120,6 +120,14 @@ const router = new VueRouter({
         {
           path: 'form',
           component: (resolve) => require(['./routers/form.vue'], resolve)
+        },
+        {
+          path: 'icon',
+          component: (resolve) => require(['./routers/icon.vue'], resolve)
+        },
+        {
+          path: 'uiscript',
+          component: (resolve) => require(['./routers/uiscript.vue'], resolve)
         }
       ],
     },

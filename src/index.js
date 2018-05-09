@@ -20,6 +20,8 @@ import SgSpin from './components/spin';
 import SgModal from './components/modal';
 import SgPreview from './components/preview';
 import SgPdf from './components/pdfPreview';
+import {Row, Col} from './components/grid';
+import Icon from './components/icon';
 
 
 const components = {
@@ -50,6 +52,9 @@ const components = {
   SgModal,
   SgPreview,
   SgPdf,
+  Row,
+  Col,
+  Icon
 };
 
 const sgui = {

@@ -1,2 +1,2 @@
-import SgIcon from './icon.vue'
-export  default SgIcon;
+import Icon from './icon.vue';
+export default Icon;
