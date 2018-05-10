@@ -14,8 +14,7 @@ import SgCollapse from './components/collapse';
 import SgButton from './components/button';
 import SgCheckbox from './components/checkbox';
 import SgRadio from './components/radio';
-import { ElTable } from 'element-table'
-import { ElTableColumn } from 'element-table'
+import {ElTable,ElTableColumn} from './components/table'
 import SgSpin from './components/spin';
 import SgModal from './components/modal';
 import SgPreview from './components/preview';
@@ -23,6 +22,8 @@ import SgPdf from './components/pdfPreview';
 import SgPage from './components/page';
 // import Tabs from './components/tabs';
 // import TabPane from './components/tab-pane';
+import {Row, Col} from './components/grid';
+import Icon from './components/icon';
 
 
 const components = {
@@ -56,20 +57,22 @@ const components = {
   SgPage,
   // Tabs,
   // TabPane,
+  Row,
+  Col,
+  Icon,
+  SgTable:ElTable,
+  SgTableColumn:ElTableColumn
 };
 
 const sgui = {
   ...components
 };
 
-const install = function(Vue, opts = {}) {
+const install = function(Vue) {
   if (install.installed) return;
-
   Object.keys(sgui).forEach(key => {
     Vue.component(key, sgui[key]);
   });
-  Vue.component('sg-table', ElTable)
-  Vue.component('sg-table-column', ElTableColumn)
   Vue.prototype.$SgModal = SgModal;
   Vue.prototype.$SgSpin = SgSpin;
 
@@ -80,10 +83,10 @@ if (typeof window !== 'undefined' && window.Vue) {
   install(window.Vue);
 }
 
-const API = {
-  version: process.env.VERSION, // eslint-disable-line no-undef
+module.exports = {
+  version: '1.0.1',
   install,
   ...components
 };
 
-module.exports.default = module.exports = API;   // eslint-disable-line no-undef
+module.exports.default = module.exports

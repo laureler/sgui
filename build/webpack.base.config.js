@@ -10,9 +10,9 @@ function resolve(dir) {
 }
 
 module.exports = {
-   entry: {
-    app: ["babel-polyfill"] 
-},
+//    entry: {
+//     app: ["babel-polyfill"]
+// },
   // 加载器
   module: {
     rules: [

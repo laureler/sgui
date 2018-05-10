@@ -12,6 +12,9 @@ Vue.use(sgui)
 // 路由配置
 const router = new VueRouter({
   esModule: false,
+  scrollBehavior (to, from, savedPosition) {
+    return { x: 0, y: 0 }
+  },
   routes: [
     {
       path: '/',
@@ -105,6 +108,34 @@ const router = new VueRouter({
         {
           path: 'pdfPreview',
           component: (resolve) => require(['./routers/pdfPreview.vue'], resolve)
+        },
+        {
+          path: 'button',
+          component: (resolve) => require(['./routers/button.vue'], resolve)
+        },
+        {
+          path: 'radio',
+          component: (resolve) => require(['./routers/radio.vue'], resolve)
+        },
+        {
+          path: 'checkbox',
+          component: (resolve) => require(['./routers/checkbox.vue'], resolve)
+        },
+        {
+          path: 'select',
+          component: (resolve) => require(['./routers/select.vue'], resolve)
+        },
+        {
+          path: 'form',
+          component: (resolve) => require(['./routers/form.vue'], resolve)
+        },
+        {
+          path: 'icon',
+          component: (resolve) => require(['./routers/icon.vue'], resolve)
+        },
+        {
+          path: 'uiscript',
+          component: (resolve) => require(['./routers/uiscript.vue'], resolve)
         }
       ],
     },

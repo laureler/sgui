@@ -16,8 +16,8 @@
           <router-link to="/" tag="li"><a>选择输入-时间、日期选择</a></router-link>
           <router-link to="/" tag="li"><a>选择输入-人员、地区选择</a></router-link>
           <router-link to="/" tag="li"><a>文件操作-文件上传</a></router-link>
-          <router-link to="/preview" tag="li" class="ready"><a>图片预览</a></router-link> 
-          <router-link to="/pdfPreview" tag="li" class=" "><a>PDF预览</a></router-link> 
+          <router-link to="/preview" tag="li" class="ready"><a>图片预览</a></router-link>
+          <router-link to="/pdfPreview" tag="li" class="ready"><a>PDF预览</a></router-link>
         </ul>
         <p class="list-title">基础组件 - 列表</p>
         <ul class="list-menu">
@@ -30,15 +30,15 @@
         </ul>
         <p class="list-title">基础组件 - 表单控件</p>
         <ul class="list-menu">
-          <router-link to="/" tag="li" class="ready"><a>单选框</a></router-link>
-          <router-link to="/" tag="li" class="ready"><a>多选框</a></router-link>
+          <router-link to="/radio" tag="li" class="ready"><a>单选框</a></router-link>
+          <router-link to="/checkbox" tag="li" class="ready"><a>多选框</a></router-link>
           <router-link to="/" tag="li"><a>数字步增</a></router-link>
-          <router-link to="/" tag="li" class="ready"><a>select选择</a></router-link>
+          <router-link to="/select" tag="li" class="ready"><a>select选择</a></router-link>
           <router-link to="/" tag="li"><a>滑块条</a></router-link>
           <router-link to="/" tag="li"><a>穿梭框</a></router-link>
-          <router-link to="/" tag="li" class="ready"><a>按钮</a></router-link>
+          <router-link to="/button" tag="li" class="ready"><a>按钮</a></router-link>
           <router-link to="/" tag="li"><a>进度条</a></router-link>
-          <router-link to="/" tag="li" class="ready"><a>表单控件</a></router-link>
+          <router-link to="/form" tag="li" class="ready"><a>表单控件</a></router-link>
         </ul>
       </div>
       <div class="module-list">
@@ -48,7 +48,7 @@
           <router-link to="/" tag="li"><a>步骤条</a></router-link>
           <router-link to="/" tag="li"><a>面包屑</a></router-link>
           <router-link to="/" tag="li"><a>步骤条（时间轴）</a></router-link>
-          <router-link to="/tab" tag="li" class="ready"><a>tab切换</a></router-link>
+          <router-link to="/" tag="li"><a>tab切换</a></router-link>
           <router-link to="/" tag="li"><a>粘性头部</a></router-link>
           <router-link to="/" tag="li"><a>折叠面板</a></router-link>
         </ul>
@@ -105,22 +105,11 @@
       <div class="module-list">
         <p class="list-title">uiScript</p>
         <ul class="list-menu">
-          <router-link to="/" tag="li"><a>uiScript使用文档</a></router-link>
+          <router-link to="/uiscript" tag="li" class="ready"><a>uiScript使用文档</a></router-link>
         </ul>
         <p class="list-title">第三方插件</p>
         <ul class="list-menu">
           <router-link to="/" tag="li"><a>第三方插件推荐</a></router-link>
-        </ul>
-      </div>
-      <div class="module-list">
-        <p class="list-title">共用样式</p>
-        <ul class="list-menu">
-          <router-link to="/" tag="li"><a>重置</a></router-link>
-          <router-link to="/" tag="li"><a>颜色</a></router-link>
-          <router-link to="/" tag="li"><a>间距</a></router-link>
-          <router-link to="/" tag="li"><a>布局</a></router-link>
-          <router-link to="/" tag="li"><a>面对属性样式</a></router-link>
-          <router-link to="/" tag="li"><a>常用布局（垂直居中）</a></router-link>
         </ul>
       </div>
       <div class="module-list">
@@ -134,7 +123,7 @@
       <div class="module-list">
         <p class="list-title">图标动画</p>
         <ul class="list-menu">
-          <router-link to="/" tag="li"><a>图标库</a></router-link>
+          <router-link to="/icon" tag="li" class="ready"><a>图标库</a></router-link>
           <router-link to="/" tag="li"><a>动画库</a></router-link>
         </ul>
       </div>
