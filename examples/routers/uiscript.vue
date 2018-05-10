@@ -5,18 +5,15 @@
 </template>
 
 <script>
-  import IArticle from '../components/article'
-
   export default {
-    name: "uiscript",
-    components: {IArticle}
+    name: "uiscript"
   }
 </script>
 
 <style scoped lang="less">
-iframe{
-  display: block;
-  width: 100%;
-  height: 100%;
-}
+  iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
 </style>

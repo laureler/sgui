@@ -11,16 +11,15 @@ module.exports = merge(webpackBaseConfig, {
   entry: {
     main: './src/index.js'
   },
-
   output: {
     path: path.resolve(__dirname, '../dist'),
     publicPath: '/dist/',
-    filename: 'sgui.min.js',
+    filename: 'sgui.js',
     library: 'sgui',
     libraryTarget: 'umd',
     umdNamedDefine: true
   },
-  externals: {
+  externals: {  //引用vue，不想被打包进组件库
     vue: {
       root: 'Vue',
       commonjs: 'vue',
