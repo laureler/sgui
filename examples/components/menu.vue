@@ -26,7 +26,7 @@
           <router-link to="/" tag="li"><a>卡片式列表</a></router-link>
           <router-link to="/" tag="li"><a>首字母排序</a></router-link>
           <router-link to="/" tag="li"><a>文件上传</a></router-link>
-          <router-link to="/" tag="li"><a>分页</a></router-link>
+          <router-link to="/page" tag="li" class="ready"><a>分页</a></router-link>
         </ul>
         <p class="list-title">基础组件 - 表单控件</p>
         <ul class="list-menu">

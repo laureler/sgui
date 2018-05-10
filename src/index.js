@@ -20,6 +20,9 @@ import SgSpin from './components/spin';
 import SgModal from './components/modal';
 import SgPreview from './components/preview';
 import SgPdf from './components/pdfPreview';
+import SgPage from './components/page';
+// import Tabs from './components/tabs';
+// import TabPane from './components/tab-pane';
 
 
 const components = {
@@ -50,6 +53,9 @@ const components = {
   SgModal,
   SgPreview,
   SgPdf,
+  SgPage,
+  // Tabs,
+  // TabPane,
 };
 
 const sgui = {
