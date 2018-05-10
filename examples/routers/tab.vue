@@ -1,7 +1,7 @@
 <template>
   <i-article>
   <article>
-    <Anchor title="sg-tree" h1></Anchor>
+    <Anchor title="sg-tab" h1></Anchor>
     <p class="bd-lead">选项卡切换组件，常用于平级区域大块内容的的收纳和展现。</p>
     <Anchor title="代码示例" h2></Anchor>
     <Demo title="基础用法">
