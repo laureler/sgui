@@ -50,7 +50,7 @@
           <router-link to="/" tag="li"><a>步骤条（时间轴）</a></router-link>
           <router-link to="/tab" tag="li" class="ready"><a>tab切换</a></router-link>
           <router-link to="/" tag="li"><a>粘性头部</a></router-link>
-          <router-link to="/" tag="li"><a>折叠面板</a></router-link>
+          <router-link to="/collapse" tag="li" class="ready"><a>折叠面板</a></router-link>
         </ul>
         <p class="list-title">基础组件 - 图表类</p>
         <ul class="list-menu">
@@ -59,7 +59,7 @@
           <router-link to="/" tag="li"><a>图片缩略图</a></router-link>
           <router-link to="/" tag="li"><a>轮播图</a></router-link>
           <router-link to="/" tag="li"><a>echart</a></router-link>
-          <router-link to="/" tag="li"><a>表格</a></router-link>
+          <router-link to="/table" tag="li" class="ready"><a>表格</a></router-link>
           <router-link to="/tree" tag="li" class="ready"><a>树控件</a></router-link>
         </ul>
         <p class="list-title">基础组件 - 其他</p>
