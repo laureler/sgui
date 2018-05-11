@@ -9,17 +9,17 @@
       <span :class="[prefixCls + '-star-content']" type="half"></span>
     </div>
     <div :class="[prefixCls + '-text']" v-if="showText" v-show="currentValue > 0">
-      <slot><span>{{ currentValue }}</span> <span v-if="currentValue <= 1">{{ t('i.rate.star') }}</span><span v-else>{{ t('i.rate.stars') }}</span></slot>
+      <slot><span>{{ currentValue }}</span> <span v-if="currentValue <= 1">{{ ('i.rate.star') }}</span><span v-else>{{ ('i.rate.stars') }}</span></slot>
     </div>
   </div>
 </template>
 <script>
-  import Locale from '../../mixins/locale';
+  //import Locale from '../../mixins/locale';
   import Emitter from '../../mixins/emitter';
   const prefixCls = 'sg-rate';
   export default {
     name: 'Rate',
-    mixins: [ Locale, Emitter ],
+    mixins: [Emitter ],
     props: {
       count: {
         type: Number,

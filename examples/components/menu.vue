@@ -32,12 +32,12 @@
         <ul class="list-menu">
           <router-link to="/radio" tag="li" class="ready"><a>单选框</a></router-link>
           <router-link to="/checkbox" tag="li" class="ready"><a>多选框</a></router-link>
-          <router-link to="/" tag="li"><a>数字步增</a></router-link>
+          <router-link to="/inputNumber" tag="li" class="ready"><a>数字步增</a></router-link>
           <router-link to="/select" tag="li" class="ready"><a>select选择</a></router-link>
-          <router-link to="/" tag="li"><a>滑块条</a></router-link>
+          <router-link to="/slider" tag="li" class="ready"><a>滑块条</a></router-link>
           <router-link to="/" tag="li"><a>穿梭框</a></router-link>
           <router-link to="/button" tag="li" class="ready"><a>按钮</a></router-link>
-          <router-link to="/" tag="li"><a>进度条</a></router-link>
+          <router-link to="/processBar" tag="li" class="ready"><a>进度条</a></router-link>
           <router-link to="/form" tag="li" class="ready"><a>表单控件</a></router-link>
         </ul>
       </div>

@@ -24,6 +24,10 @@ import SgPage from './components/page';
 // import TabPane from './components/tab-pane';
 import {Row, Col} from './components/grid';
 import Icon from './components/icon';
+import SgInputNumber from './components/input-number';
+import SgSlider from './components/slider';
+import SgProcessBar from './components/process';
+import SgTooltip from './components/tooltip';
 
 
 const components = {
@@ -61,7 +65,11 @@ const components = {
   Col,
   Icon,
   SgTable:ElTable,
-  SgTableColumn:ElTableColumn
+  SgTableColumn:ElTableColumn,
+  SgInputNumber,
+  SgSlider,
+  SgProcessBar,
+  SgTooltip,
 };
 
 const sgui = {

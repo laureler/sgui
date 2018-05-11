@@ -145,6 +145,18 @@ const router = new VueRouter({
         {
           path: 'collapse',
           component: (resolve) => require(['./routers/collapse.vue'], resolve)
+        },
+        {
+          path: 'inputNumber',
+          component: (resolve) => require(['./routers/inputNumber.vue'], resolve)
+        },
+        {
+          path: 'slider',
+          component: (resolve) => require(['./routers/slider.vue'], resolve)
+        },
+        {
+          path: 'processBar',
+          component: (resolve) => require(['./routers/processBar.vue'], resolve)
         }
       ],
     },
